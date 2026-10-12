@@ -1,0 +1,66 @@
+name: lendingclub_mini
+description: Minimal Lending Club config for testing
+
+target:
+  column: loan_status
+  positive_label: "Fully Paid"
+  negative_label: "Charged Off"
+  positive_meaning: "borrower repaid"
+  negative_meaning: "borrower defaulted"
+
+decisions:
+  approve: APPROVE
+  deny: DENY
+  approve_maps_to: positive
+  deny_maps_to: negative
+
+special_values:
+  values: []
+  meanings: {}
+  treatment: missing
+
+features:
+  - name: fico_range_low
+    description: "Lower bound of FICO range at origination"
+    type: numeric
+    range: "660-845"
+    direction: higher_better
+  - name: dti
+    description: "Debt-to-income ratio"
+    type: numeric
+    range: "0-999"
+    direction: lower_better
+  - name: emp_title
+    description: "Free-text job title"
+    type: string
+  - name: purpose
+    description: "Loan purpose category"
+    type: categorical
+
+summary_features:
+  - fico_range_low
+  - dti
+
+regulatory_context: "Test regulatory context."
+data_observations: "Test observations."
+decision_framework: "Test framework."
+product_context: "Test product."
+
+evaluation:
+  prohibited_features: []
+  require_reason_codes: true
+  max_crash_rate: 0.1
+  weights:
+    accuracy: 0.4
+    simplicity: 0.2
+    robustness: 0.2
+    coverage: 0.2
+
+defaults:
+  sample_size: 10
+  n_clusters: 3
+  holdout_size: 20
+  batch_size: 5
+  n_candidates: 2
+  n_generations: 2
+  top_k: 1

@@ -1,0 +1,1150 @@
+[
+  {
+    "application_id": 0,
+    "decision": "APPROVE",
+    "confidence": 0.68,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Proportion of balances to credit limits could be lower"
+    ],
+    "reasoning": "This applicant has a perfect delinquency record ([n]% never delinquent, no derog marks ever), a deep credit file with [n] trades over [n] years, and moderate revolving utilization ([n]%). The risk estimate of [n] is below median but the pristine payment history and credit depth provide strong compensating factors. [n] new accounts in [n] months is slightly elevated but manageable given the overall profile. Approved as a moderate-risk HELOC candidate.",
+    "case_index": 0
+  },
+  {
+    "application_id": 1,
+    "decision": "APPROVE",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Installment loan balances relative to original amounts are high"
+    ],
+    "reasoning": "Strong profile with a risk estimate of [n] (above median), [n] years of credit history, [n] delinquencies ever, and moderate revolving utilization at [n]%. Installment burden is high at [n]% but this reflects relatively new installment loans and does not indicate revolving stress. No recent inquiry activity and stable account opening behavior support approval for this HELOC.",
+    "case_index": 1
+  },
+  {
+    "application_id": 2,
+    "decision": "DENY",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Delinquent past or present on accounts",
+      "Length of time accounts have been established",
+      "Percentage of accounts carrying balances is too high"
+    ],
+    "reasoning": "This applicant presents compounding risk factors: a low risk estimate ([n], P5-P25 range), very short credit history (oldest trade only [n] months), recent delinquency ([n]-day within last [n] months), [n]% revolving utilization, and [n]% of accounts carrying balances. For a HELOC—an additional revolving line—the combination of thin file, recent delinquency, and already-heavy revolving leverage indicates insufficient repayment capacity and elevated default risk.",
+    "case_index": 2
+  },
+  {
+    "application_id": 3,
+    "decision": "DENY",
+    "confidence": 0.97,
+    "reason_codes": [
+      "No bureau record or public record found",
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "This applicant has no bureau record whatsoever, meaning there is [n] credit history to evaluate. Per OCC guidance, thin credit files require extra scrutiny, and a completely absent file provides no basis to assess repayment capacity, credit behavior, or leverage. A HELOC secured by home equity cannot be responsibly extended without any demonstrable credit track record.",
+    "case_index": 3
+  },
+  {
+    "application_id": 4,
+    "decision": "APPROVE",
+    "confidence": 0.88,
+    "reason_codes": [
+      "Installment loan balances relative to original amounts are moderate"
+    ],
+    "reasoning": "Excellent profile: risk estimate of [n] (well above median), nearly [n] years of credit history, [n]% never delinquent across [n] trades, and very low revolving utilization at just [n]% with [n] high-utilization accounts. This applicant demonstrates strong repayment capacity and disciplined revolving credit management—ideal for a HELOC. Installment burden at [n]% is the only minor note but well within acceptable range.",
+    "case_index": 4
+  },
+  {
+    "application_id": 5,
+    "decision": "APPROVE",
+    "confidence": 0.9,
+    "reason_codes": [
+      "No significant risk factors identified"
+    ],
+    "reasoning": "Strong across all dimensions: risk estimate [n], [n] years of credit history, [n]% never delinquent, low revolving utilization ([n]%), no high-utilization accounts, no recent inquiries, and conservative account-opening behavior. This applicant has excellent repayment capacity and minimal existing revolving leverage, making them a strong HELOC candidate.",
+    "case_index": 5
+  },
+  {
+    "application_id": 6,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": [
+      "No significant risk factors identified"
+    ],
+    "reasoning": "Outstanding profile: risk estimate of [n] (P95 range), nearly [n] years of credit history with an average account age near [n] years, [n] delinquencies ever, [n]% revolving utilization burden, and no high-utilization accounts. Credit depth is excellent at [n] trades. This is a premier HELOC candidate with virtually no risk indicators.",
+    "case_index": 6
+  },
+  {
+    "application_id": 7,
+    "decision": "APPROVE",
+    "confidence": 0.8,
+    "reason_codes": [
+      "Percentage of accounts carrying balances is elevated"
+    ],
+    "reasoning": "Solid profile with a risk estimate of [n], [n] years of credit history, [n]% never delinquent across [n] trades, and low revolving utilization at [n]%. [n] high-utilization account and [n]% of trades carrying balances are minor concerns, but the pristine payment history, low overall revolving burden, and stable recent behavior (only [n] new account in [n] months) provide strong compensating factors for HELOC approval.",
+    "case_index": 7
+  },
+  {
+    "application_id": 8,
+    "decision": "DENY",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established",
+      "Too few revolving accounts"
+    ],
+    "reasoning": "Despite a decent risk estimate of [n], this applicant has an extremely thin credit file—only [n] trade (an installment account) with no revolving credit history at all. For a HELOC, which is a revolving product, the complete absence of revolving account management experience is a significant concern. OCC guidance requires extra scrutiny for thin files, and a single-trade file provides insufficient evidence of capacity to manage a revolving home equity line.",
+    "case_index": 8
+  },
+  {
+    "application_id": 9,
+    "decision": "APPROVE",
+    "confidence": 0.84,
+    "reason_codes": [
+      "Delinquent past or present on accounts"
+    ],
+    "reasoning": "Strong overall profile: risk estimate of [n], [n] years of credit history, very low revolving utilization at [n]%, and [n] high-utilization accounts. The [n] historical [n]-day delinquency occurred over [n] years ago with no recurrence, and current status shows no delinquency in the last [n] months. The demonstrated recovery, combined with low leverage and strong credit depth, makes this a sound HELOC approval despite the historical blemish.",
+    "case_index": 9
+  },
+  {
+    "application_id": 10,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Length of time accounts have been established",
+      "Proportion of balances to credit limits too high",
+      "Number of accounts with high utilization"
+    ],
+    "reasoning": "The external risk estimate of [n] is below median and concerning. The credit file is very thin — oldest trade only [n] months ([n] years) and average age just [n] months, well below the population P25. While there's no delinquency history ([n]% never delinquent), revolving utilization at [n]% is high with [n] high-utilization accounts. For a HELOC product adding more revolving exposure, the combination of a short/thin credit history and already-elevated revolving leverage presents too much risk.",
+    "case_index": 10
+  },
+  {
+    "application_id": 11,
+    "decision": "APPROVE",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Strong external risk estimate of [n], perfect payment history ([n]% never delinquent), and low revolving utilization at [n]% are all positive. However, there are data inconsistencies — MSinceOldestTradeOpen is only [n] months but AverageMInFile is [n] months and NumSatisfactoryTrades is [n] vs NumTotalTrades of [n], suggesting some missing data. Taking the risk estimate and clean payment history at face value, the low leverage and good score support approval, though the thin visible trade count is a minor concern.",
+    "case_index": 11
+  },
+  {
+    "application_id": 12,
+    "decision": "APPROVE",
+    "confidence": 0.75,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "External risk estimate of [n] is strong, with a long credit history (oldest trade [n] months, average [n] months) and perfect payment record ([n]% never delinquent). Installment burden is high at [n]% and all current accounts carry balances ([n]% with balance), but revolving utilization data is missing and only [n] revolving account carries a balance, suggesting low revolving exposure. The strong score and spotless history support approval for this HELOC.",
+    "case_index": 12
+  },
+  {
+    "application_id": 13,
+    "decision": "DENY",
+    "confidence": 0.78,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Too few accounts currently paid as agreed",
+      "Serious delinquency or public record"
+    ],
+    "reasoning": "The most critical concern is a very recent delinquency — MSinceMostRecentDelq of just [n] months with MaxDelq2PublicRecLast12M of [n] ([n] days delinquent in last [n] months). Only [n]% of trades have never been delinquent, which is very low. The external risk estimate of [n] is below median. Despite a reasonably established file (oldest trade [n] months), the active/recent delinquency pattern is a strong contraindication for extending additional revolving credit secured by home equity.",
+    "case_index": 13
+  },
+  {
+    "application_id": 14,
+    "decision": "DENY",
+    "confidence": 0.68,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Amount owed on accounts is too high",
+      "Number of accounts with high utilization"
+    ],
+    "reasoning": "External risk estimate of [n] is low (P5-P25 range). There is a recent delinquency at [n] months ago with [n]-day worst in last [n] months. Despite a deep credit file ([n] total trades, [n] satisfactory), current leverage is concerning: revolving burden at [n]%, [n] high-utilization accounts, and [n] revolving accounts with balances. For a HELOC adding more revolving exposure, the combination of a low risk score, recent delinquency, and already-elevated revolving leverage warrants denial.",
+    "case_index": 14
+  },
+  {
+    "application_id": 15,
+    "decision": "APPROVE",
+    "confidence": 0.88,
+    "reason_codes": [
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "Strong external risk estimate of [n], spotless payment history ([n]% never delinquent), and moderate revolving utilization at [n]% with [n] high-utilization accounts. Credit history is reasonably established at [n] months oldest trade. No inquiries in last [n] months and minimal recent account opening. This is a well-qualified applicant for a HELOC with low existing revolving burden and clean credit history.",
+    "case_index": 15
+  },
+  {
+    "application_id": 16,
+    "decision": "APPROVE",
+    "confidence": 0.88,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "Excellent risk estimate of [n], perfect payment history, very low revolving utilization at [n]%, and a long credit history (oldest trade [n] months). The only minor concern is a relatively thin file with only [n] total trades and [n] opened in last [n] months, but the overall risk profile is very strong. Low existing revolving leverage makes this applicant well-suited for a HELOC.",
+    "case_index": 16
+  },
+  {
+    "application_id": 17,
+    "decision": "DENY",
+    "confidence": 0.85,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Delinquent past or present on accounts",
+      "Number of accounts with delinquency",
+      "Serious delinquency or public record"
+    ],
+    "reasoning": "Multiple compounding risk factors: low external risk estimate of [n], revolving utilization at [n]% (over-limit), recent delinquency at [n] months ago with [n]-day worst in last [n] months, and [n] accounts ever [n] days delinquent. Only [n]% of trades never delinquent. For a HELOC product, an applicant who is already over-limit on revolving accounts with recent severe delinquency presents unacceptable risk to home equity collateral.",
+    "case_index": 17
+  },
+  {
+    "application_id": 18,
+    "decision": "APPROVE",
+    "confidence": 0.9,
+    "reason_codes": [
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "Excellent risk profile: external risk estimate of [n], perfect payment history ([n]% never delinquent across [n] trades), very low revolving utilization at [n]%, and a deep, well-established credit file (oldest trade [n] months). The only minor flag is [n] accounts opened in last [n] months (above P95), but this is well offset by the otherwise stellar profile. Extremely low revolving burden makes this an ideal HELOC candidate.",
+    "case_index": 18
+  },
+  {
+    "application_id": 19,
+    "decision": "APPROVE",
+    "confidence": 0.58,
+    "reason_codes": [
+      "Number of accounts with high utilization",
+      "Proportion of balances to credit limits too high",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "The external risk estimate of [n] is near median, and the applicant has a perfect payment history ([n]% never delinquent) across a deep file ([n] trades, oldest [n] months). However, there are significant revolving leverage concerns: [n] revolving accounts with balances, [n] high-utilization accounts (well above P95), and [n]% revolving burden. For a HELOC, the heavy existing revolving usage is concerning, but the clean payment history across many accounts and no delinquency ever provides some offset. Marginal approval with low confidence.",
+    "case_index": 19
+  },
+  {
+    "application_id": 20,
+    "decision": "APPROVE",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "External risk estimate of [n] is above median, with a very deep credit file ([n] months oldest trade, [n] avg). [n] delinquencies in the [n]/[n]-day categories ever, and the [n] historical delinquency was [n] months ago. Revolving utilization at [n]% is elevated for a HELOC applicant, but with only [n] revolving accounts carrying balances and no recent inquiries or new accounts, the overall profile is stable and manageable.",
+    "case_index": 20
+  },
+  {
+    "application_id": 21,
+    "decision": "DENY",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Serious delinquency or public record",
+      "Too many recent inquiries"
+    ],
+    "reasoning": "Although revolving utilization is very low ([n]%) and the file has depth, the most recent delinquency was only [n] months ago and the worst status in the last [n] months is [n] days delinquent (MaxDelq2PublicRecLast12M=[n]). For a HELOC, active/very recent delinquency signals immediate repayment capacity concerns. The risk estimate of [n] is median, which combined with the recent [n]-day delinquency creates too much near-term risk.",
+    "case_index": 21
+  },
+  {
+    "application_id": 22,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "Excellent risk profile across all dimensions: external risk estimate of [n] (P95 level), [n] delinquencies ever, [n]% trades never delinquent, very low revolving utilization at [n]%, and a deep [n] year credit history. No recent inquiries or new accounts. The only minor note is a relatively small number of total trades ([n]), but this is a very strong applicant for a HELOC.",
+    "case_index": 22
+  },
+  {
+    "application_id": 23,
+    "decision": "DENY",
+    "confidence": 0.58,
+    "reason_codes": [
+      "Number of accounts with delinquency",
+      "Too many recent inquiries",
+      "Proportion of balances to credit limits too high",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "Risk estimate of [n] is slightly below median, with [n] inquiries in the last [n] months suggesting active credit seeking. [n] bank/national accounts with high utilization and [n] revolving accounts carrying balances indicate heavy revolving leverage — a significant concern for a HELOC product that would add more revolving exposure. The delinquency [n] months ago with [n]% never-delinquent rate is moderate, but the combination of high revolving burden and credit-seeking behavior tips toward denial.",
+    "case_index": 23
+  },
+  {
+    "application_id": 24,
+    "decision": "DENY",
+    "confidence": 0.7,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Serious delinquency or public record",
+      "Number of accounts with delinquency"
+    ],
+    "reasoning": "External risk estimate of [n] is well below median (P10 range). Most critically, MaxDelq2PublicRecLast12M=[n] indicates a derogatory public record in the last [n] months, and MaxDelqEver=[n] means a [n] day delinquency on record. The most recent delinquency was just [n] month ago. Only [n]% of trades never delinquent. While revolving utilization is low at [n]%, the severe and very recent delinquency history makes this applicant too risky for a HELOC.",
+    "case_index": 24
+  },
+  {
+    "application_id": 25,
+    "decision": "DENY",
+    "confidence": 0.92,
+    "reason_codes": [
+      "Serious delinquency or public record",
+      "Too many recent inquiries",
+      "Proportion of balances to credit limits too high",
+      "Delinquent past or present on accounts"
+    ],
+    "reasoning": "This application has compounding risk factors: low risk estimate ([n]), [n] day delinquency in last [n] months (MaxDelq2PublicRecLast12M=[n]), very recent delinquency ([n] months), extreme inquiry activity ([n] in [n] months — double P95), and near-maxed revolving utilization at [n]%. Multiple derogatory trades ([n] at [n], [n] at [n]) and a relatively thin/young file ([n] months average). Adding more revolving credit via a HELOC would be extremely risky.",
+    "case_index": 25
+  },
+  {
+    "application_id": 26,
+    "decision": "APPROVE",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Strong credit profile with risk estimate of [n], perfect delinquency record ([n]% never delinquent, [n] [n]/[n]-day trades), and no recent credit-seeking activity. Revolving utilization at [n]% and installment burden at [n]% are moderate. The file has reasonable depth at [n] months oldest trade. No high-utilization accounts. This is a solid candidate for a HELOC with well-managed existing obligations.",
+    "case_index": 26
+  },
+  {
+    "application_id": 27,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Too few accounts currently paid as agreed",
+      "Number of accounts with delinquency"
+    ],
+    "reasoning": "While leverage is low (revolving burden [n]%, installment [n]%), the risk estimate of [n] is below median and there is a very recent delinquency — just [n] month ago with a [n]-day delinquency in the last [n] months (MaxDelq2PublicRecLast12M=[n]). Only [n]% of trades never delinquent, indicating a pattern. For a HELOC secured by home equity, active delinquency signals current repayment stress that makes extending additional revolving credit inadvisable.",
+    "case_index": 27
+  },
+  {
+    "application_id": 28,
+    "decision": "DENY",
+    "confidence": 0.93,
+    "reason_codes": [
+      "Serious delinquency or public record",
+      "Delinquent past or present on accounts",
+      "Number of accounts with delinquency",
+      "Too many recent inquiries"
+    ],
+    "reasoning": "Very poor credit history: risk estimate of [n] (near P5), [n] trades with [n] day delinquencies, [n] with [n] days, only [n]% of trades never delinquent, derogatory public record in last [n] months (MaxDelq2PublicRecLast12M=[n]), and delinquency as recent as [n] month ago. [n] inquiries in [n] months suggest distressed credit seeking. Despite a long file age, the pervasive and ongoing delinquency pattern makes this far too risky for a HELOC.",
+    "case_index": 28
+  },
+  {
+    "application_id": 29,
+    "decision": "APPROVE",
+    "confidence": 0.88,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Too many recent inquiries"
+    ],
+    "reasoning": "Strong risk estimate of [n], perfect delinquency record ([n]% never delinquent, [n] [n]/[n]-day trades ever), and deep credit file with [n] satisfactory trades. Revolving utilization at [n]% is moderate and manageable. Installment burden at [n]% is somewhat elevated and [n] accounts opened in last [n] months is notable, but the pristine payment history and strong risk score provide substantial confidence. This is a well-qualified HELOC applicant.",
+    "case_index": 29
+  },
+  {
+    "application_id": 30,
+    "decision": "DENY",
+    "confidence": 0.62,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Serious delinquency or public record",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "The external risk estimate of [n] is below median. Most concerning is the very recent delinquency ([n] months ago) combined with a MaxDelq2PublicRecLast12M of [n] (derogatory) and a MaxDelqEver of [n] ([n] days). While the long credit history ([n] months oldest trade, [n] avg) and moderate revolving utilization ([n]%) are positive, the recent delinquency combined with a history of serious delinquency ([n] days ever) creates significant risk for a HELOC product.",
+    "case_index": 30
+  },
+  {
+    "application_id": 31,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Length of time accounts have been established",
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Despite a clean delinquency history ([n]% never delinquent), this application has major concerns: [n] accounts opened in the last [n] months is extremely high (P95 is [n]), and the average age of file is only [n] months—very thin and immature. The installment burden is at [n]% and there are [n] high-utilization accounts. For a HELOC, the rapid credit expansion on a shallow file with high installment burden signals elevated repayment risk.",
+    "case_index": 31
+  },
+  {
+    "application_id": 32,
+    "decision": "APPROVE",
+    "confidence": 0.68,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Too many recent inquiries",
+      "Number of installment accounts with balances"
+    ],
+    "reasoning": "The external risk estimate of [n] is slightly above median, supported by a deep credit file ([n] months oldest, [n] avg, [n] total trades) with [n]% never delinquent and the single [n]-day delinquency was [n] months ago. Revolving utilization is very low at [n]%. The concerns are [n] new accounts in [n] months and [n] recent inquiries, plus high installment burden ([n]%), but the strong history, low revolving leverage, and recovery from past delinquency tip toward approval.",
+    "case_index": 32
+  },
+  {
+    "application_id": 33,
+    "decision": "APPROVE",
+    "confidence": 0.6,
+    "reason_codes": [
+      "NumBank2NatlTradesWHighUtilization",
+      "Too many accounts recently opened",
+      "Number of revolving accounts with balances"
+    ],
+    "reasoning": "Clean delinquency history ([n]% never delinquent, no derog), low revolving utilization ([n]%), and moderate installment burden ([n]%) are strong positives. The [n] satisfactory trades suggest extensive positive history despite only a [n]-month oldest trade. Concerns include [n] high-utilization accounts and [n] revolving accounts carrying balances, but the overall leverage is manageable. The risk estimate of [n] is near median but the clean payment history and low revolving burden support approval for a HELOC.",
+    "case_index": 33
+  },
+  {
+    "application_id": 34,
+    "decision": "APPROVE",
+    "confidence": 0.75,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Strong profile with an above-median risk estimate of [n], perfect payment history ([n]% never delinquent, no derog ever), deep credit history ([n] months oldest, [n] avg), and no recent account openings or inquiries indicating stable behavior. The primary concern is revolving utilization at [n]% which is elevated for a HELOC applicant who would be adding more revolving exposure. However, only [n] revolving accounts carry balances and installment burden is low at [n]%, making overall repayment capacity adequate.",
+    "case_index": 34
+  },
+  {
+    "application_id": 35,
+    "decision": "APPROVE",
+    "confidence": 0.85,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Percentage of accounts with balances is too high"
+    ],
+    "reasoning": "Excellent risk estimate of [n] (P75+), perfect delinquency history, solid credit depth ([n] months oldest, [n] avg), no recent inquiries, and only [n] new account in [n] months. The revolving utilization at [n]% is above median and [n]% of accounts carry balances, but with only [n] revolving accounts carrying balances and [n] high-utilization accounts, the absolute exposure is modest. Strong candidate for a HELOC.",
+    "case_index": 35
+  },
+  {
+    "application_id": 36,
+    "decision": "DENY",
+    "confidence": 0.78,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Proportion of balances to credit limits too high",
+      "Number of accounts with high utilization ratio is too high",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "Low risk estimate of [n] combined with a very recent delinquency ([n] months, [n]-day delinquency in last [n] months per MaxDelq2PublicRecLast12M=[n]). Current leverage is concerning: [n]% revolving utilization, [n]% installment burden, [n] high-utilization accounts, and [n] revolving accounts carrying balances. For a HELOC adding more revolving exposure, this applicant shows both recent payment stress and heavy existing leverage—a high-risk combination despite the long credit history.",
+    "case_index": 36
+  },
+  {
+    "application_id": 37,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Too many accounts recently opened",
+      "Amount owed on installment accounts is too high"
+    ],
+    "reasoning": "The risk estimate of [n] is below median, and there's a very recent delinquency at [n] months ago with a [n]-day delinquency in the last [n] months (MaxDelq2PublicRecLast12M=[n]). While revolving utilization is low ([n]%) and the file is deep ([n] total trades), the installment burden is maxed at [n]% and [n] new accounts were opened recently. The active/very recent delinquency is the primary disqualifier—for a HELOC, evidence of current payment stress is a serious concern despite the otherwise reasonable leverage profile.",
+    "case_index": 37
+  },
+  {
+    "application_id": 38,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": [
+      "Percentage of accounts with balances is too high"
+    ],
+    "reasoning": "Exceptional profile across all dimensions: risk estimate of [n] (P95), perfect delinquency history ([n]% never delinquent), deep credit history ([n] months oldest), no recent account openings or inquiries, and extremely low leverage ([n]% revolving utilization, [n]% installment burden). This is an ideal HELOC candidate with strong repayment capacity and pristine credit history. The only minor note is [n]% of accounts carry balances, which is unremarkable.",
+    "case_index": 38
+  },
+  {
+    "application_id": 39,
+    "decision": "APPROVE",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Amount owed on installment accounts is too high"
+    ],
+    "reasoning": "Above-median risk estimate of [n] with a perfect payment history ([n]% never delinquent, no derog ever) and reasonable credit depth ([n] months oldest, [n] trades). No recent inquiries and moderate new account activity. The concerns are revolving utilization at [n]% and installment burden at [n]%, meaning existing leverage is elevated. However, for a HELOC, the clean payment history and absence of any delinquency history provide confidence in repayment capacity despite the current burden levels.",
+    "case_index": 39
+  },
+  {
+    "application_id": 40,
+    "decision": "DENY",
+    "confidence": 0.62,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Proportion of balances to credit limits too high",
+      "Percentage of accounts currently carrying a balance is too high"
+    ],
+    "reasoning": "External risk estimate of [n] is below median, with a relatively recent delinquency ([n] months ago) and a history of [n] day delinquency ever. Installment burden is very high at [n]%, percent of trades with balance is [n]% (well above the [n]th percentile), and the credit file average age is relatively short at [n] months. For a HELOC, the combination of moderate credit score, recent delinquency history, and high overall indebtedness signals elevated risk.",
+    "case_index": 40
+  },
+  {
+    "application_id": 41,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": [
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Excellent risk estimate of [n], perfect payment history with [n]% trades never delinquent, and extremely low revolving utilization at [n]%. No inquiries, no new accounts, and no delinquency history whatsoever. The file is reasonably deep at [n] trades over ~[n] years. This is a very strong profile for a HELOC with minimal leverage concerns. The only minor note is the moderate total number of trades.",
+    "case_index": 41
+  },
+  {
+    "application_id": 42,
+    "decision": "APPROVE",
+    "confidence": 0.96,
+    "reason_codes": [
+      "Too many recent inquiries"
+    ],
+    "reasoning": "Outstanding risk estimate of [n], deep credit history spanning [n] years, perfect payment record with [n] delinquencies ever, and negligible revolving utilization at [n]%. Only [n]% of trades carry a balance. [n] recent inquiries are a very minor concern. This is an exceptionally strong HELOC candidate with excellent repayment capacity indicators and minimal leverage.",
+    "case_index": 42
+  },
+  {
+    "application_id": 43,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "Excellent risk estimate of [n], very deep credit history ([n] years oldest trade, average [n] years), flawless payment history with [n]% never delinquent, and [n] revolving burden. No recent inquiries and conservative credit usage. The only minor note is a smaller number of total trades ([n]), but the quality of the file is exceptional. Very low risk for a HELOC.",
+    "case_index": 43
+  },
+  {
+    "application_id": 44,
+    "decision": "APPROVE",
+    "confidence": 0.8,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Good risk estimate of [n], perfect payment history with [n] delinquencies ever, and moderate revolving utilization at [n]%. The applicant has [n] satisfactory trades and a good credit depth. The main concerns are [n] new accounts in the last [n] months (above P75) and installment burden of [n]%, though these are offset by the clean payment record and reasonable revolving utilization. For a HELOC, the low revolving burden is reassuring.",
+    "case_index": 44
+  },
+  {
+    "application_id": 45,
+    "decision": "DENY",
+    "confidence": 0.78,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Delinquent past or present on accounts",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "Below-median risk estimate of [n], revolving utilization of [n]% (over-limit), and a very recent delinquency just [n] months ago with a [n]-day delinquency in the last [n] months. For a HELOC—a revolving product—the over-limit status on existing revolving accounts is a critical red flag indicating poor revolving credit management. The thin file ([n] trades) and short average age ([n] months) compound the concern. Multiple risk dimensions are simultaneously weak.",
+    "case_index": 45
+  },
+  {
+    "application_id": 46,
+    "decision": "DENY",
+    "confidence": 0.58,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Number of accounts with delinquency",
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Risk estimate of [n] is slightly above median, but [n]% trades never delinquent is well below the P25, with a [n] day delinquency on record and most recent delinquency only [n] months ago. Revolving utilization at [n]% is moderately elevated. The thin file with only [n] trades and relatively high delinquency rate across that small portfolio raises concern about payment reliability for a HELOC. The lack of recent account-seeking activity is positive but insufficient to offset the delinquency pattern.",
+    "case_index": 46
+  },
+  {
+    "application_id": 47,
+    "decision": "APPROVE",
+    "confidence": 0.96,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Excellent risk estimate of [n], perfect payment history with all [n] trades never delinquent, deep credit history ([n] years), and very low revolving utilization at [n]%. Minimal recent credit-seeking behavior with no inquiries in [n] months. Installment burden at [n]% is the only modest concern, but overall this is an exceptionally strong HELOC candidate with demonstrated long-term credit management ability.",
+    "case_index": 47
+  },
+  {
+    "application_id": 48,
+    "decision": "DENY",
+    "confidence": 0.55,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Amount owed on accounts is too high",
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "While the applicant has a large number of satisfactory trades ([n]/[n]) and low revolving utilization ([n]%), the risk estimate of [n] is only slightly above median, with a very recent delinquency ([n] months ago, [n]-day severity in last [n]M). The installment burden of [n]% is extremely high, and there are [n] installment accounts carrying balances. For a HELOC, the combination of very recent delinquency and extremely high installment leverage raises serious repayment capacity concerns despite the strong revolving profile.",
+    "case_index": 48
+  },
+  {
+    "application_id": 49,
+    "decision": "DENY",
+    "confidence": 0.55,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Too many recent inquiries",
+      "Number of accounts with high utilization"
+    ],
+    "reasoning": "Risk estimate of [n] is above median and the applicant has a perfect payment history with [n] delinquencies and good credit depth ([n] years). However, revolving utilization is very high at [n]% with [n] high-utilization accounts, and there are [n] inquiries in the last [n] months suggesting active credit-seeking. For a HELOC—a revolving product—the near-maxed revolving lines are a significant concern for repayment capacity, and the inquiry volume suggests potential financial stress. This is a borderline case where the high revolving leverage tips toward denial.",
+    "case_index": 49
+  },
+  {
+    "application_id": 50,
+    "decision": "APPROVE",
+    "confidence": 0.55,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Percentage of accounts currently carrying a balance is too high",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "External risk estimate of [n] is above median, with a perfect delinquency history ([n]% never delinquent, no derog records). Credit file is well-established at [n] years. However, revolving utilization is very high at [n]%, all [n] accounts are carrying balances ([n]%), and the file is relatively thin with only [n] total trades. The high utilization on existing revolving credit is concerning for a HELOC product, but the spotless payment history and established file provide enough comfort for a marginal approval.",
+    "case_index": 50
+  },
+  {
+    "application_id": 51,
+    "decision": "APPROVE",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Number of recent inquiries"
+    ],
+    "reasoning": "Strong profile with an external risk estimate of [n], perfect payment history ([n]% never delinquent), good credit depth ([n] trades, [n] year oldest account), and low revolving utilization at [n]%. The low revolving burden is particularly favorable for a HELOC. Minor concerns are [n] new accounts in the last [n] months and recent inquiry activity, but these are modest and well within normal ranges. Overall a well-qualified applicant.",
+    "case_index": 51
+  },
+  {
+    "application_id": 52,
+    "decision": "APPROVE",
+    "confidence": 0.93,
+    "reason_codes": [
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "Excellent profile across all dimensions: high risk estimate of [n], perfect payment history, deep and mature credit file ([n] trades, [n] year oldest account, average age ~[n] years), and very low revolving utilization at [n]% with no high-utilization accounts. This is an ideal HELOC candidate with strong repayment capacity indicators and minimal leverage. The only minor note is [n] new accounts in the past [n] months, which is slightly elevated but not concerning given the overall strength.",
+    "case_index": 52
+  },
+  {
+    "application_id": 53,
+    "decision": "DENY",
+    "confidence": 0.97,
+    "reason_codes": [
+      "No bureau record or public record",
+      "Length of time accounts have been established",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "No bureau record exists for this applicant — all fields are missing with the 'no bureau record' special value. Without any credit history to evaluate repayment capacity, credit behavior, or leverage, there is no basis to approve a HELOC, which is an unsecured revolving credit line against home equity requiring demonstrated creditworthiness. Per OCC guidance, thin credit files require extra scrutiny, and a completely absent file cannot support approval.",
+    "case_index": 53
+  },
+  {
+    "application_id": 54,
+    "decision": "DENY",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Length of time accounts have been established",
+      "Too many accounts recently opened",
+      "Amount owed on installment accounts is too high",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "While this applicant has a clean payment history ([n]% never delinquent), the credit file is extremely thin and young — oldest trade is only [n] months, average age [n] months, with just [n] total trades. [n] new accounts opened in the last [n] months represent [n]% of the file. Installment burden is very high at [n]% and [n]% of accounts carry balances. For a HELOC product, the very short credit history and high installment leverage create significant repayment risk despite the lack of delinquencies. The risk estimate of [n] is below median, reflecting these concerns.",
+    "case_index": 54
+  },
+  {
+    "application_id": 55,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Serious delinquency or public record",
+      "Proportion of balances to credit limits too high",
+      "Percentage of accounts currently carrying a balance is too high",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "Risk estimate of [n] is below median. The applicant has a history of severe delinquency ([n] days ever, [n] trade [n] days delinquent), though the most recent was [n] months ago and current status is satisfactory. However, current leverage is elevated with [n]% revolving utilization, [n]% installment burden, [n]% of trades carrying balances, and [n] high-utilization account. For a HELOC, the combination of past severe delinquency and heavy current indebtedness presents concerning repayment capacity risk.",
+    "case_index": 55
+  },
+  {
+    "application_id": 56,
+    "decision": "DENY",
+    "confidence": 0.9,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Proportion of balances to credit limits too high",
+      "Number of accounts with delinquency",
+      "Too many accounts with high utilization"
+    ],
+    "reasoning": "Low risk estimate of [n] (P5-P25 range) combined with recent delinquency ([n] days delinquent in the last [n] months, most recent delinquency only [n] months ago), only [n]% of trades never delinquent, and heavy leverage — [n]% revolving utilization, [n]% installment burden, [n] high-utilization accounts, and [n]% of trades carrying balances. This is a multi-dimensional risk profile with active/recent delinquency, high leverage, and a low risk score. For a HELOC, the recent [n]-day delinquency and extreme revolving burden are especially concerning.",
+    "case_index": 56
+  },
+  {
+    "application_id": 57,
+    "decision": "APPROVE",
+    "confidence": 0.9,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "Excellent risk estimate of [n] (P95 level), perfect payment history with no delinquencies ever, low revolving utilization at [n]%, and a well-established file (oldest trade [n] years, average age [n] years). The only concern is a thin file with only [n] total trades, but the long history and pristine performance more than compensate. Very low leverage makes this an excellent HELOC candidate with strong repayment capacity indicators.",
+    "case_index": 57
+  },
+  {
+    "application_id": 58,
+    "decision": "APPROVE",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Amount owed on installment accounts is too high",
+      "Percentage of accounts currently carrying a balance is too high"
+    ],
+    "reasoning": "Risk estimate of [n] with a perfect payment history across [n] trades and [n] year oldest account. Revolving utilization is very low at [n]%, which is favorable for a HELOC. However, [n] new accounts in the last [n] months is at the P95 level, installment burden is high at [n]% with [n] installment accounts carrying balances, and [n]% of all trades carry balances. The perfect history and low revolving leverage support approval, but the aggressive recent account opening and high installment load temper confidence.",
+    "case_index": 58
+  },
+  {
+    "application_id": 59,
+    "decision": "APPROVE",
+    "confidence": 0.68,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Number of accounts with high utilization",
+      "Amount owed on installment accounts is too high"
+    ],
+    "reasoning": "Risk estimate of [n] with a flawless payment history ([n]% never delinquent) across a very deep and mature file ([n] trades, [n] year oldest, ~[n] year average age). Revolving utilization is moderate at [n]%, but there are [n] high-utilization accounts and installment burden is very high at [n]%. [n] new accounts in the past [n] months is elevated. The perfect payment history and extraordinary credit depth provide significant positive weight, but the high installment burden and multiple high-utilization accounts raise concerns about overall indebtedness for a HELOC. The strong history tips the balance toward approval.",
+    "case_index": 59
+  },
+  {
+    "application_id": 60,
+    "decision": "DENY",
+    "confidence": 0.78,
+    "reason_codes": [
+      "Amount owed on accounts is too high",
+      "Number of accounts with high utilization is too high",
+      "Delinquent past or present on accounts",
+      "Too many revolving accounts with balances"
+    ],
+    "reasoning": "ExternalRiskEstimate of [n] is well below median, indicating elevated risk. The applicant has [n] bank/national trades with high utilization (P95 is [n]) and [n] revolving accounts carrying balances, which is at the [n]th percentile. While the delinquency history is moderate ([n] trade [n] ever, last delinquency [n] months ago) and the file has reasonable depth, the combination of a low risk score and heavy revolving leverage is particularly concerning for a HELOC product that would add more revolving exposure.",
+    "case_index": 60
+  },
+  {
+    "application_id": 61,
+    "decision": "DENY",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Serious delinquency or public record",
+      "Delinquent past or present on accounts",
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Despite some positive indicators (low revolving utilization at [n]%, [n]% trades never delinquent), there is a critical red flag: MSinceMostRecentDelq is [n], meaning the applicant is currently delinquent, and MaxDelq2PublicRecLast12M is [n] ([n] days delinquent in last [n] months). Active severe delinquency is a strong negative signal for a HELOC. The ExternalRiskEstimate of [n] is below median, and MSinceOldestTradeOpen of [n] months suggests a relatively thin/young file. The contradiction between NumSatisfactoryTrades ([n]) and NumTotalTrades ([n]) suggests data inconsistency, adding uncertainty.",
+    "case_index": 61
+  },
+  {
+    "application_id": 62,
+    "decision": "APPROVE",
+    "confidence": 0.92,
+    "reason_codes": [
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "This is a strong application. ExternalRiskEstimate of [n] is above the [n]th percentile, with [n] delinquency history ([n]% trades never delinquent, no [n] or [n] day delinquencies ever). Revolving utilization is very low at [n]% with only [n] high-utilization account and [n] revolving trades with balances. Deep credit file with [n] total trades and [n] satisfactory provides strong evidence of credit management. The only minor concern is [n] new accounts in the last [n] months, which is slightly elevated but manageable given the overall profile.",
+    "case_index": 62
+  },
+  {
+    "application_id": 63,
+    "decision": "DENY",
+    "confidence": 0.97,
+    "reason_codes": [
+      "No bureau record or public record",
+      "Length of time accounts have been established",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "All features are missing with 'no bureau record or public record,' meaning there is no credit history to evaluate. Per OCC guidance, thin credit files require extra scrutiny, and a completely absent credit file makes it impossible to assess repayment capacity, credit history, or indebtedness — all required dimensions for HELOC underwriting. A HELOC secured by home equity with no demonstrable credit history represents unacceptable risk.",
+    "case_index": 63
+  },
+  {
+    "application_id": 64,
+    "decision": "DENY",
+    "confidence": 0.77,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Serious delinquency or public record",
+      "Proportion of balances to credit limits too high",
+      "Percentage of accounts with balances is too high"
+    ],
+    "reasoning": "The most critical concern is MSinceMostRecentDelq of [n] month and MaxDelq2PublicRecLast12M of [n] ([n] days delinquent in last [n] months), indicating very recent and active delinquency. The ExternalRiskEstimate of [n] is below median. While revolving utilization is moderate at [n]%, [n]% of all trades carry balances and there are [n] revolving accounts with balances. Despite a long credit history ([n] months oldest trade), the active delinquency pattern is disqualifying for a HELOC product, as recent payment problems directly threaten repayment capacity.",
+    "case_index": 64
+  },
+  {
+    "application_id": 65,
+    "decision": "APPROVE",
+    "confidence": 0.97,
+    "reason_codes": [],
+    "reasoning": "Exceptional application across all dimensions. ExternalRiskEstimate of [n] is at the [n]th percentile. [n] delinquency history ever, [n]% trades never delinquent, with a very deep and mature file ([n] months oldest trade, [n]-month average age). Revolving utilization is minimal at [n]% with [n] high-utilization accounts and only [n] revolving trade with a balance. This applicant demonstrates excellent credit management and minimal revolving leverage, making them an ideal HELOC candidate.",
+    "case_index": 65
+  },
+  {
+    "application_id": 66,
+    "decision": "APPROVE",
+    "confidence": 0.6,
+    "reason_codes": [
+      "Too many recent inquiries",
+      "Too many accounts recently opened",
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "The applicant has a clean delinquency history ([n]% never delinquent, no [n] or [n] ever) with a deep file of [n] total trades and [n] satisfactory. ExternalRiskEstimate of [n] is near median. The main concerns are [n] inquiries in last [n] months (well above P95 of [n]), [n] new accounts in [n] months, and [n]% revolving utilization. However, the perfect payment history and credit depth offset the recent credit-seeking behavior. For a HELOC, the clean payment record and moderate utilization provide reasonable comfort, though the inquiry volume warrants monitoring.",
+    "case_index": 66
+  },
+  {
+    "application_id": 67,
+    "decision": "APPROVE",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Length of time accounts have been established",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "ExternalRiskEstimate of [n] is above the [n]th percentile with very low revolving utilization ([n]%) and [n] high-utilization accounts — excellent for a HELOC. The prior delinquency was [n] months ago (over [n] years), showing strong recovery. The main weakness is a relatively thin file ([n] trades) with below-median average age ([n] months), though the oldest trade at [n] months provides some depth. The combination of strong risk score, minimal revolving burden, and distant delinquency supports approval.",
+    "case_index": 67
+  },
+  {
+    "application_id": 68,
+    "decision": "APPROVE",
+    "confidence": 0.88,
+    "reason_codes": [
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Strong risk profile with ExternalRiskEstimate of [n], [n] delinquency history ([n]% never delinquent), and very low revolving utilization at [n]% with [n] high-utilization accounts. The credit file has good depth with [n]-month average age and [n] satisfactory trades. Some data inconsistencies exist (MSinceOldestTradeOpen missing, NumTotalTrades shows [n] despite other trade counts being positive), but the overall risk indicators are consistently strong. Low revolving leverage makes this applicant well-suited for a HELOC.",
+    "case_index": 68
+  },
+  {
+    "application_id": 69,
+    "decision": "DENY",
+    "confidence": 0.75,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Number of accounts with high utilization is too high",
+      "Length of time accounts have been established",
+      "Percentage of accounts with balances is too high"
+    ],
+    "reasoning": "Despite a clean delinquency record ([n]% never delinquent), the applicant presents significant leverage concerns critical for HELOC underwriting. Revolving utilization is [n]% (well above P75), [n] high-utilization accounts (at P95), and [n]% of trades carry balances. The ExternalRiskEstimate of [n] is below median, and the credit file is young ([n]-month average age, [n] months oldest). Adding a HELOC to a borrower already maxing out revolving lines with a shallow credit history creates unacceptable repayment risk. The heavy existing revolving burden compounds with the low risk score.",
+    "case_index": 69
+  },
+  {
+    "application_id": 70,
+    "decision": "APPROVE",
+    "confidence": 0.85,
+    "reason_codes": [
+      "Installment loan balances near original amounts",
+      "Number of accounts with high utilization"
+    ],
+    "reasoning": "Strong credit profile with ExternalRiskEstimate of [n] (above median), perfect delinquency history ([n]% never delinquent, no derogatory marks ever), deep credit file ([n] months oldest trade, [n] total trades, [n] satisfactory). Revolving utilization at [n]% is moderate. Installment burden at [n]% is very high, but overall leverage is manageable given the clean payment history and credit depth. No recent inquiry pressure.",
+    "case_index": 70
+  },
+  {
+    "application_id": 71,
+    "decision": "DENY",
+    "confidence": 0.62,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Too many accounts with balances",
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "ExternalRiskEstimate of [n] is below median, and the credit file is relatively young ([n] months oldest trade, average [n] months). Revolving utilization at [n]% is elevated with [n] revolving accounts carrying balances, and [n]% of all trades have balances — indicating heavy current leverage. While there's no recent delinquency and only a distant past delinquency ([n] months ago), the combination of short credit history, high revolving burden, and below-median risk score presents too much risk for a HELOC.",
+    "case_index": 71
+  },
+  {
+    "application_id": 72,
+    "decision": "APPROVE",
+    "confidence": 0.8,
+    "reason_codes": [
+      "Too many recent inquiries",
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Strong fundamentals: ExternalRiskEstimate of [n], perfect payment history ([n]% never delinquent), very low revolving utilization at [n]%, and only [n] revolving accounts with balances. The [n] inquiries in the last [n] months is a concern but is offset by the clean credit history and low leverage. Credit depth is moderate ([n] months oldest, [n] average) but adequate. No installment burden. This is a low-leverage, clean-history applicant well-suited for a HELOC.",
+    "case_index": 72
+  },
+  {
+    "application_id": 73,
+    "decision": "DENY",
+    "confidence": 0.92,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Number of accounts with delinquency",
+      "Proportion of balances to credit limits too high",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "Very concerning profile: ExternalRiskEstimate of [n] (well below median), active delinquency with most recent delinquency just [n] month ago, [n]-day delinquency in the last [n] months (MaxDelq2PublicRecLast12M=[n]), only [n]% of trades never delinquent, and [n] accounts with [n] day delinquencies. High revolving utilization at [n]% and [n]% of accounts carrying balances. Only [n] satisfactory trades out of [n]. Active delinquency makes this applicant unsuitable for a new HELOC.",
+    "case_index": 73
+  },
+  {
+    "application_id": 74,
+    "decision": "DENY",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Length of time accounts have been established",
+      "Proportion of balances to credit limits too high",
+      "Too many accounts recently opened",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "Very thin and young credit file — oldest trade only [n] months, average age only [n] months. ExternalRiskEstimate of [n] is below median. While payment history is perfect ([n]% never delinquent), revolving utilization is high at [n]%, installment burden at [n]%, and [n]% of accounts carry balances. [n] new accounts in the last [n] months relative to only [n] total trades suggests rapid credit-seeking. For a HELOC, the combination of a very short credit history and heavy leverage across all accounts is too risky.",
+    "case_index": 74
+  },
+  {
+    "application_id": 75,
+    "decision": "DENY",
+    "confidence": 0.58,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Amount owed on accounts is too high",
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "ExternalRiskEstimate of [n] is below median. While the oldest trade at [n] months shows a long credit history, the average file age is only [n] months suggesting many newer accounts. [n] [n] day delinquency and most recent delinquency only [n] months ago, with only [n]% of trades never delinquent. Installment burden is very high at [n]%, [n]% of accounts carry balances, and [n] new accounts opened recently. The moderately recent delinquency combined with high overall leverage and below-median risk score tips this toward denial for a HELOC.",
+    "case_index": 75
+  },
+  {
+    "application_id": 76,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Number of accounts with delinquency",
+      "Serious delinquency or public record",
+      "Delinquent past or present on accounts"
+    ],
+    "reasoning": "Despite an ExternalRiskEstimate of [n] (near median) and currently moderate revolving utilization ([n]%), the delinquency history is significant: [n] accounts with [n] day delinquencies, [n] with [n] day delinquencies, and a worst-ever [n]-day delinquency. Most recent delinquency was [n] months ago, showing some recovery, but the severity and breadth of past delinquency is concerning for a home-equity-secured revolving product. Installment burden is also very high at [n]%. The combination of serious past delinquency history and high installment leverage warrants denial.",
+    "case_index": 76
+  },
+  {
+    "application_id": 77,
+    "decision": "DENY",
+    "confidence": 0.97,
+    "reason_codes": [
+      "Length of time accounts have been established",
+      "Too few accounts currently paid as agreed"
+    ],
+    "reasoning": "No bureau record or public record exists for this applicant — all fields are missing. There is no credit history to evaluate repayment capacity, creditworthiness, or leverage. Per OCC guidance, thin credit files require extra scrutiny, and a completely absent credit file provides no basis for extending a HELOC, which is a revolving credit product secured by the borrower's home equity. Cannot assess any underwriting dimension.",
+    "case_index": 77
+  },
+  {
+    "application_id": 78,
+    "decision": "DENY",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Number of accounts with high utilization",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "ExternalRiskEstimate of [n] is well below median. While the applicant has a deep credit file ([n] months oldest, [n] trades, [n] satisfactory) with no [n]/[n]-day delinquencies on record, current leverage is very high: [n] high-utilization bank/national accounts, revolving burden at [n]%, installment burden at [n]%, [n] revolving accounts carrying balances, and [n]% of all trades with balances. A recent delinquency [n] months ago adds concern. For a HELOC, this level of existing leverage combined with the below-median risk score suggests limited repayment capacity.",
+    "case_index": 78
+  },
+  {
+    "application_id": 79,
+    "decision": "APPROVE",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "Solid credit profile: ExternalRiskEstimate of [n] (above median), perfect payment history ([n]% never delinquent, no derogatory marks ever), very deep credit file ([n] months oldest, [n] total trades, [n] satisfactory), and low revolving utilization at [n]%. The main concern is [n] new accounts in the last [n] months, which is at the [n]th percentile and suggests active credit-seeking. However, this is well offset by the pristine delinquency record, low leverage, and substantial credit depth — a strong candidate for a HELOC.",
+    "case_index": 79
+  },
+  {
+    "application_id": 80,
+    "decision": "APPROVE",
+    "confidence": 0.62,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established",
+      "Proportion of balances to credit limits too high"
+    ],
+    "reasoning": "Strong external risk estimate of [n] with perfect payment history ([n]% never delinquent, no derogatory marks ever). However, significant concern is the extremely thin credit file — only [n] total trades with a relatively short history ([n] months oldest, [n] average). Revolving utilization at [n]% is moderate but all active accounts carry balances. The thin file is a notable risk for a HELOC, but the clean history and strong risk score tilt toward a cautious approval.",
+    "case_index": 80
+  },
+  {
+    "application_id": 81,
+    "decision": "DENY",
+    "confidence": 0.62,
+    "reason_codes": [
+      "Too many accounts recently opened",
+      "Length of time accounts have been established",
+      "Too many recent inquiries"
+    ],
+    "reasoning": "While the risk estimate of [n] is decent and payment history is perfect, this is an extremely young credit file — oldest trade only [n] months, average age [n] months. [n] accounts opened in the last [n] months out of [n] total represents aggressive recent credit-seeking behavior with [n] inquiries in [n] months. For a HELOC secured by home equity, this credit profile is far too immature and rapidly expanding to warrant approval despite the low revolving utilization.",
+    "case_index": 81
+  },
+  {
+    "application_id": 82,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": [
+      "No significant risk factors identified"
+    ],
+    "reasoning": "Excellent profile across all dimensions: high risk estimate ([n]), deep credit file ([n] months oldest, [n] trades), perfect payment history with [n] delinquencies ever, low revolving utilization ([n]%), moderate installment burden ([n]%), no high-utilization accounts, and minimal recent credit-seeking. This is an ideal HELOC candidate with strong repayment capacity indicators and well-established credit management.",
+    "case_index": 82
+  },
+  {
+    "application_id": 83,
+    "decision": "DENY",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Amount owed on accounts is too high",
+      "Proportion of balances to credit limits too high",
+      "Delinquent past or present on accounts",
+      "Number of accounts with delinquency"
+    ],
+    "reasoning": "Low risk estimate of [n] combined with heavy leverage across both revolving ([n]%) and installment ([n]%) lines, with [n]% of accounts carrying balances and a high-utilization account. Past delinquency history ([n] account [n] days, only [n]% never delinquent) with most recent delinquency just [n] months ago compounds the concern. For a HELOC, this level of existing debt burden with a history of payment difficulty presents unacceptable risk.",
+    "case_index": 83
+  },
+  {
+    "application_id": 84,
+    "decision": "APPROVE",
+    "confidence": 0.92,
+    "reason_codes": [
+      "No significant risk factors identified"
+    ],
+    "reasoning": "Strong risk estimate of [n] with perfect payment history ([n]% never delinquent, [n] derogatory marks). Deep credit file with [n] total trades spanning [n] months. Revolving utilization is extremely low at [n]%, and while installment burden is elevated at [n]%, overall leverage is manageable with only [n]% of accounts carrying balances. Minimal recent credit-seeking behavior. Excellent HELOC candidate.",
+    "case_index": 84
+  },
+  {
+    "application_id": 85,
+    "decision": "DENY",
+    "confidence": 0.6,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Amount owed on accounts is too high",
+      "Number of accounts with delinquency"
+    ],
+    "reasoning": "Despite a clean payment history ([n]% never delinquent) and deep credit file ([n] months oldest), the risk estimate of [n] is below median and current leverage is very high: revolving utilization at [n]%, installment burden at [n]%, [n] high-utilization accounts, and [n]% of accounts carrying balances. For a HELOC — which would add more revolving debt — this level of existing revolving and installment burden raises serious repayment capacity concerns. The applicant appears near-maxed on existing credit.",
+    "case_index": 85
+  },
+  {
+    "application_id": 86,
+    "decision": "APPROVE",
+    "confidence": 0.75,
+    "reason_codes": [
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Risk estimate of [n] is slightly above median with a perfect payment history across [n] trades — [n] delinquencies ever. Revolving utilization is manageable at [n]% with moderate installment burden ([n]%). While the average age of file ([n] months) is somewhat short relative to total trades suggesting rapid account accumulation, the spotless payment record across many accounts and low revolving burden provide confidence. Good candidate for a HELOC given demonstrated ability to manage multiple credit lines responsibly.",
+    "case_index": 86
+  },
+  {
+    "application_id": 87,
+    "decision": "APPROVE",
+    "confidence": 0.68,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established"
+    ],
+    "reasoning": "Risk estimate of [n] is solid, and revolving utilization is moderate at [n]% with no high-utilization accounts. The recent delinquency ([n] months ago) is a concern, but [n]% of trades have never been delinquent and the applicant currently has [n] satisfactory trades. The file is somewhat thin ([n] total trades, [n] months oldest) but adequate. The recent delinquency appears to be an isolated event rather than a pattern, and the overall profile supports cautious approval.",
+    "case_index": 87
+  },
+  {
+    "application_id": 88,
+    "decision": "APPROVE",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "Risk estimate of [n] with perfect payment history ([n]% never delinquent across [n] trades) and a reasonably established file ([n] months oldest). Revolving utilization at [n]% is moderate, though installment burden at [n]% and [n]% of accounts carrying balances indicate broad leverage. However, the clean history with no derogatory marks, no recent credit-seeking, and adequate credit depth support approval. The leverage level warrants monitoring but is manageable for a HELOC.",
+    "case_index": 88
+  },
+  {
+    "application_id": 89,
+    "decision": "DENY",
+    "confidence": 0.85,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Proportion of balances to credit limits too high",
+      "Amount owed on accounts is too high",
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "Low risk estimate of [n] is the primary driver, compounded by very recent delinquency ([n] months ago, [n]-day delinquency in last [n] months). Heavy revolving leverage with [n] revolving accounts carrying balances, [n]% revolving utilization, [n] high-utilization accounts, and [n]% installment burden indicate severely strained repayment capacity. Despite the deep credit file ([n] months oldest, [n] trades), the active delinquency and extreme leverage make this a clear denial for a HELOC that would add additional revolving exposure.",
+    "case_index": 89
+  },
+  {
+    "application_id": 90,
+    "decision": "DENY",
+    "confidence": 0.72,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Too recent delinquency on accounts",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "While this applicant has a deep credit file ([n] months oldest trade, [n] total trades) with [n]% never delinquent and moderate revolving utilization ([n]%), the critical concern is a very recent delinquency — MSinceMostRecentDelq of [n] month with a [n]-day delinquency in the last [n] months (MaxDelq2PublicRecLast12M=[n]). Combined with a below-median risk estimate of [n], this active delinquency signals current repayment stress. For a HELOC, evidence of current payment difficulty is a strong negative signal despite the otherwise established credit history.",
+    "case_index": 90
+  },
+  {
+    "application_id": 91,
+    "decision": "DENY",
+    "confidence": 0.78,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established",
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "This applicant has a thin credit file (only [n] total trades), short average account age ([n] months), and very high revolving utilization at [n]% with [n]% of accounts carrying balances. The risk estimate of [n] is below median. [n] accounts opened in the last [n] months out of only [n] total suggests rapid recent credit-seeking. The prior [n] day delinquency, though the condition-not-met flag on MSinceMostRecentDelq creates some ambiguity, combined with thin file and high leverage makes this too risky for a HELOC.",
+    "case_index": 91
+  },
+  {
+    "application_id": 92,
+    "decision": "DENY",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Serious delinquency or public record",
+      "Too few accounts currently paid as agreed",
+      "Delinquent past or present on accounts"
+    ],
+    "reasoning": "This applicant presents multiple compounding risk factors: low risk estimate ([n]), very high revolving utilization ([n]%), [n] days worst-ever delinquency (MaxDelqEver=[n]), only [n]% of trades never delinquent, and a thin file with only [n] total trades. The delinquency at [n] months ago is relatively recent. For a HELOC, the combination of severe historical delinquency, near-maxed revolving lines, and thin credit depth strongly suggests inadequate repayment capacity.",
+    "case_index": 92
+  },
+  {
+    "application_id": 93,
+    "decision": "APPROVE",
+    "confidence": 0.82,
+    "reason_codes": [
+      "Delinquent past or present on accounts",
+      "Number of accounts with delinquency"
+    ],
+    "reasoning": "This applicant has a strong risk estimate ([n], above P75), very low revolving utilization ([n]%), moderate installment burden ([n]%), and solid credit depth with [n] trades over [n] years. The prior [n] day delinquency (MaxDelqEver=[n]) occurred [n] months ago and since then the borrower has maintained current status with [n]% of trades never delinquent and no new accounts opened recently. The demonstrated recovery, low current leverage, and no recent credit-seeking behavior support approval for a HELOC.",
+    "case_index": 93
+  },
+  {
+    "application_id": 94,
+    "decision": "DENY",
+    "confidence": 0.68,
+    "reason_codes": [
+      "Proportion of balances to credit limits too high",
+      "Amount owed on accounts is too high",
+      "Number of accounts with high utilization"
+    ],
+    "reasoning": "Despite a deep credit file ([n] trades, [n] years, [n]% never delinquent), the applicant has a low risk estimate of [n], very high revolving utilization ([n]%), installment burden at [n]%, [n] high-utilization accounts, and [n] revolving accounts carrying balances. For a HELOC, this level of existing revolving and installment leverage is very concerning — the borrower appears near capacity across all credit types. The combination of heavy leverage across both revolving and installment debt with a below-median risk score tips toward denial.",
+    "case_index": 94
+  },
+  {
+    "application_id": 95,
+    "decision": "APPROVE",
+    "confidence": 0.92,
+    "reason_codes": [
+      "No significant risk factors identified"
+    ],
+    "reasoning": "This is a strong application: high risk estimate ([n]), perfect payment history ([n]% never delinquent, [n] derogatory marks), very low revolving utilization ([n]%), solid credit depth ([n] trades, [n] years oldest), minimal recent credit-seeking ([n] inquiries in [n] months), and low percentage of accounts with balances ([n]%). All dimensions are favorable for a HELOC, with excellent repayment capacity and low current leverage.",
+    "case_index": 95
+  },
+  {
+    "application_id": 96,
+    "decision": "DENY",
+    "confidence": 0.8,
+    "reason_codes": [
+      "Length of time accounts have been established",
+      "Too many accounts recently opened",
+      "Too few accounts currently paid as agreed",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "This applicant has an extremely thin and young credit file — oldest trade only [n] months, average age [n] months, and [n] total trades with [n] opened in just the last [n] months. The risk estimate of [n] is below median. Installment burden is very high at [n]% with [n]% of accounts carrying balances. The rapid account growth and very short credit history provide insufficient track record for a HELOC, which is a significant long-term revolving obligation secured by the home.",
+    "case_index": 96
+  },
+  {
+    "application_id": 97,
+    "decision": "APPROVE",
+    "confidence": 0.65,
+    "reason_codes": [
+      "Too many recent inquiries",
+      "Too many accounts recently opened"
+    ],
+    "reasoning": "This applicant has an above-median risk estimate ([n]), perfect payment history ([n]% never delinquent), moderate revolving utilization ([n]%), and reasonable credit depth ([n] trades, [n] years). The concerns are [n] inquiries in [n] months and [n] new accounts in last [n] months, suggesting active credit-seeking. However, the clean payment record, moderate leverage, and adequate credit history support approval, though the recent credit activity warrants monitoring.",
+    "case_index": 97
+  },
+  {
+    "application_id": 98,
+    "decision": "DENY",
+    "confidence": 0.8,
+    "reason_codes": [
+      "Too few accounts currently paid as agreed",
+      "Length of time accounts have been established",
+      "Too many recent inquiries"
+    ],
+    "reasoning": "Despite a decent risk estimate of [n], this applicant has an extremely thin credit file — only [n] total trade opened [n] months ago with nearly all balance/utilization fields missing due to insufficient data. [n] inquiries in the last [n] months suggest aggressive credit-seeking. For a HELOC secured by home equity, a single trade with [n] years of history provides woefully insufficient evidence of sustained repayment capacity. The thin file risk per OCC guidance requires extra scrutiny, and this file simply cannot support a revolving home equity product.",
+    "case_index": 98
+  },
+  {
+    "application_id": 99,
+    "decision": "DENY",
+    "confidence": 0.75,
+    "reason_codes": [
+      "Too many recent inquiries",
+      "Too many accounts recently opened",
+      "Length of time accounts have been established",
+      "Amount owed on accounts is too high"
+    ],
+    "reasoning": "This applicant has a below-median risk estimate ([n]), a young credit file (oldest trade [n] months, average [n] months), high recent activity ([n] inquiries in [n] months, [n] new accounts in [n] months), and high installment burden ([n]%). The short credit history combined with aggressive recent credit-seeking and high installment leverage presents a concerning risk profile. While revolving utilization is moderate ([n]%), the overall pattern of rapid credit expansion on a thin, young file with prior delinquency ([n] months ago) does not support approval for a HELOC.",
+    "case_index": 99
+  }
+]

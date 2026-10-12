@@ -1,0 +1,232 @@
+[
+  {
+    "generation": 1,
+    "best_score": 0.811931855500821,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.7945946552427581
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.811931855500821
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.6697108066971081
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.742613804004215
+      }
+    }
+  },
+  {
+    "generation": 2,
+    "best_score": 0.8179806875367623,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.7660779396814639
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8179806875367623
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.7760790009458312
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.7666204614099352
+      }
+    }
+  },
+  {
+    "generation": 3,
+    "best_score": 0.8235798398036303,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.7988847686821254
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8235798398036303
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.7697344610797849
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.7702073703133026
+      }
+    }
+  },
+  {
+    "generation": 4,
+    "best_score": 0.8253954856602381,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8160892708533385
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.7673910256410257
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.7814835604935082
+      }
+    }
+  },
+  {
+    "generation": 5,
+    "best_score": 0.8253954856602381,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8228954856602382
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8195043200691212
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.7897890660008964
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.7925078758640787
+      }
+    }
+  },
+  {
+    "generation": 6,
+    "best_score": 0.8253954856602381,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8228954856602382
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.8103954856602382
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.8123954856602382
+      }
+    }
+  },
+  {
+    "generation": 7,
+    "best_score": 0.8253954856602381,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8228954856602382
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.8163954856602382
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.8143954856602382
+      }
+    }
+  },
+  {
+    "generation": 8,
+    "best_score": 0.8253954856602381,
+    "best_source": "gemini:gemini-3-flash-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.8043954856602382
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.8043954856602382
+      }
+    }
+  },
+  {
+    "generation": 9,
+    "best_score": 0.8303954856602382,
+    "best_source": "gemini:gemini-3-pro-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8303954856602382
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.8143954856602382
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.8003954856602382
+      }
+    }
+  },
+  {
+    "generation": 10,
+    "best_score": 0.8303954856602382,
+    "best_source": "gemini:gemini-3-pro-preview",
+    "by_model": {
+      "gemini:gemini-3-pro-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "gemini:gemini-3-flash-preview": {
+        "n_valid": 3,
+        "best": 0.8253954856602381
+      },
+      "openai:gpt-5.2": {
+        "n_valid": 3,
+        "best": 0.8183954856602382
+      },
+      "anthropic:claude-opus-4-6": {
+        "n_valid": 3,
+        "best": 0.8228954856602382
+      }
+    }
+  }
+]

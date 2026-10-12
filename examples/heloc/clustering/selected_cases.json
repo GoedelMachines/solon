@@ -1,0 +1,92 @@
+[
+  {
+    "cluster": 0,
+    "type": "centroid",
+    "index": 920
+  },
+  {
+    "cluster": 0,
+    "type": "boundary",
+    "index": 74
+  },
+  {
+    "cluster": 1,
+    "type": "centroid",
+    "index": 55
+  },
+  {
+    "cluster": 1,
+    "type": "boundary",
+    "index": 19
+  },
+  {
+    "cluster": 2,
+    "type": "centroid",
+    "index": 5734
+  },
+  {
+    "cluster": 2,
+    "type": "boundary",
+    "index": 22
+  },
+  {
+    "cluster": 3,
+    "type": "centroid",
+    "index": 6312
+  },
+  {
+    "cluster": 3,
+    "type": "boundary",
+    "index": 62
+  },
+  {
+    "cluster": 4,
+    "type": "centroid",
+    "index": 6817
+  },
+  {
+    "cluster": 4,
+    "type": "boundary",
+    "index": 236
+  },
+  {
+    "cluster": 5,
+    "type": "centroid",
+    "index": 9075
+  },
+  {
+    "cluster": 5,
+    "type": "boundary",
+    "index": 30
+  },
+  {
+    "cluster": 6,
+    "type": "centroid",
+    "index": 7719
+  },
+  {
+    "cluster": 6,
+    "type": "boundary",
+    "index": 844
+  },
+  {
+    "cluster": 7,
+    "type": "centroid",
+    "index": 333
+  },
+  {
+    "cluster": 7,
+    "type": "boundary",
+    "index": 489
+  },
+  {
+    "cluster": 8,
+    "type": "centroid",
+    "index": 6421
+  },
+  {
+    "cluster": 8,
+    "type": "boundary",
+    "index": 427
+  }
+]

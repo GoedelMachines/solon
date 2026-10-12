@@ -1,0 +1,87 @@
+[
+  {
+    "case_index": 0,
+    "decision": "APPROVE",
+    "confidence": 0.9,
+    "reason_codes": ["Strong credit history"],
+    "reasoning": "Excellent risk estimate, clean history.",
+    "original_features": {
+      "ExternalRiskEstimate": 82,
+      "NetFractionRevolvingBurden": 15,
+      "NumTrades60Ever2DerogPubRec": 0,
+      "PercentTradesNeverDelq": 100,
+      "NumInqLast6M": 0,
+      "MSinceMostRecentDelq": 40,
+      "MaxDelqEver": 8,
+      "NumSatisfactoryTrades": 25
+    }
+  },
+  {
+    "case_index": 1,
+    "decision": "DENY",
+    "confidence": 0.85,
+    "reason_codes": ["Too many delinquent accounts", "High revolving utilization"],
+    "reasoning": "Multiple delinquencies and high utilization.",
+    "original_features": {
+      "ExternalRiskEstimate": 65,
+      "NetFractionRevolvingBurden": 80,
+      "NumTrades60Ever2DerogPubRec": 3,
+      "PercentTradesNeverDelq": 75,
+      "NumInqLast6M": 4,
+      "MSinceMostRecentDelq": -7,
+      "MaxDelqEver": 4,
+      "NumSatisfactoryTrades": 10
+    }
+  },
+  {
+    "case_index": 2,
+    "decision": "APPROVE",
+    "confidence": 0.95,
+    "reason_codes": ["Excellent credit profile"],
+    "reasoning": "Top risk score, long history, no delinquencies.",
+    "original_features": {
+      "ExternalRiskEstimate": 88,
+      "NetFractionRevolvingBurden": 5,
+      "NumTrades60Ever2DerogPubRec": 0,
+      "PercentTradesNeverDelq": 100,
+      "NumInqLast6M": 1,
+      "MSinceMostRecentDelq": -9,
+      "MaxDelqEver": 8,
+      "NumSatisfactoryTrades": 35
+    }
+  },
+  {
+    "case_index": 3,
+    "decision": "DENY",
+    "confidence": 0.92,
+    "reason_codes": ["Serious delinquency", "Excessive inquiries", "High revolving burden"],
+    "reasoning": "Very poor credit profile across all dimensions.",
+    "original_features": {
+      "ExternalRiskEstimate": 50,
+      "NetFractionRevolvingBurden": 120,
+      "NumTrades60Ever2DerogPubRec": 5,
+      "PercentTradesNeverDelq": 60,
+      "NumInqLast6M": 6,
+      "MSinceMostRecentDelq": 2,
+      "MaxDelqEver": 2,
+      "NumSatisfactoryTrades": 5
+    }
+  },
+  {
+    "case_index": 4,
+    "decision": "APPROVE",
+    "confidence": 0.7,
+    "reason_codes": ["Moderate risk with mitigating factors"],
+    "reasoning": "Good risk estimate with manageable utilization.",
+    "original_features": {
+      "ExternalRiskEstimate": 75,
+      "NetFractionRevolvingBurden": 40,
+      "NumTrades60Ever2DerogPubRec": 1,
+      "PercentTradesNeverDelq": 90,
+      "NumInqLast6M": 2,
+      "MSinceMostRecentDelq": 30,
+      "MaxDelqEver": 6,
+      "NumSatisfactoryTrades": 20
+    }
+  }
+]

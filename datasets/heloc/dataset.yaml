@@ -1,0 +1,311 @@
+name: heloc
+description: >
+  FICO Home Equity Line of Credit (HELOC) dataset. 10,459 real credit
+  applications, 23 integer-valued credit bureau features, binary outcome.
+
+target:
+  column: RiskPerformance
+  positive_label: 0
+  negative_label: 1
+  positive_meaning: "good borrower (repaid)"
+  negative_meaning: "bad borrower (defaulted)"
+
+decisions:
+  approve: APPROVE
+  deny: DENY
+  approve_maps_to: positive
+  deny_maps_to: negative
+
+special_values:
+  values: [-7, -8, -9]
+  meanings:
+    -7: "condition not met"
+    -8: "no usable/valid trades"
+    -9: "no bureau record or public record"
+  treatment: missing
+
+features:
+  - name: ExternalRiskEstimate
+    description: "Consolidated credit risk score (similar to FICO). Higher = less risky."
+    type: integer
+    range: "33-94"
+    direction: higher_better
+    distribution: "Median: 72. P5: 57, P25: 64, P75: 80, P95: 88."
+    missing_pct: 5.7
+
+  - name: MSinceOldestTradeOpen
+    description: "Months since oldest credit account opened. Longer = more established."
+    type: integer
+    range: "2-803"
+    direction: higher_better
+    distribution: "Median: 186 (15.5 years). P25: 135, P75: 257."
+    missing_pct: 7.9
+
+  - name: MSinceMostRecentTradeOpen
+    description: "Months since most recent account opened."
+    type: integer
+    range: "0-383"
+    direction: neutral
+    distribution: "Median: 6. P75: 12, P95: 29."
+    missing_pct: 5.6
+
+  - name: AverageMInFile
+    description: "Average age of all credit accounts in months."
+    type: integer
+    range: "4-383"
+    direction: higher_better
+    distribution: "Median: 76 (6.3 years). P25: 57, P75: 97."
+    missing_pct: 5.6
+
+  - name: NumSatisfactoryTrades
+    description: "Number of accounts in good standing."
+    type: integer
+    range: "0-79"
+    direction: higher_better
+    distribution: "Median: 20. P25: 13, P75: 28."
+    missing_pct: 5.6
+
+  - name: NumTrades60Ever2DerogPubRec
+    description: "Accounts ever 60+ days delinquent or with derogatory public records."
+    type: integer
+    range: "0-19"
+    direction: lower_better
+    distribution: "Median: 0. P75: 1, P95: 3."
+    missing_pct: 5.6
+
+  - name: NumTrades90Ever2DerogPubRec
+    description: "Accounts ever 90+ days delinquent or with derogatory public records."
+    type: integer
+    range: "0-19"
+    direction: lower_better
+    distribution: "Median: 0. P75: 0, P95: 2."
+    missing_pct: 5.6
+
+  - name: PercentTradesNeverDelq
+    description: "Percentage of accounts never delinquent."
+    type: integer
+    range: "0-100"
+    direction: higher_better
+    distribution: "Median: 97. P25: 89, P75: 100."
+    missing_pct: 5.6
+
+  - name: MSinceMostRecentDelq
+    description: "Months since most recent delinquency."
+    type: integer
+    range: "0-83"
+    direction: higher_better
+    distribution: "Median: 15. P25: 5, P75: 34. 51.9% special values (no delinquency on file)."
+    missing_pct: 51.9
+
+  - name: MaxDelq2PublicRecLast12M
+    description: >
+      Worst delinquency status in last 12 months. Scale: 0=no delinquency,
+      1=derogatory comment, 2=120+ days, 3=90 days, 4=60 days, 5=30 days,
+      6=current/not delinquent, 7=current/was delinquent, 8=no history, 9=unknown.
+    type: integer
+    range: "0-9"
+    direction: neutral
+    distribution: "Median: 6."
+    missing_pct: 5.6
+
+  - name: MaxDelqEver
+    description: >
+      Worst delinquency ever recorded. Same scale as MaxDelq2PublicRecLast12M
+      (lower values = worse delinquency history).
+    type: integer
+    range: "2-8"
+    direction: neutral
+    distribution: "Median: 6. P25: 6, P75: 8."
+    missing_pct: 5.6
+
+  - name: NumTotalTrades
+    description: "Total number of credit accounts (open and closed)."
+    type: integer
+    range: "0-104"
+    direction: neutral
+    distribution: "Median: 21. P25: 13, P75: 30."
+    missing_pct: 5.6
+
+  - name: NumTradesOpeninLast12M
+    description: "Accounts opened in last 12 months."
+    type: integer
+    range: "0-19"
+    direction: lower_better
+    distribution: "Median: 1. P75: 3, P95: 5."
+    missing_pct: 5.6
+
+  - name: PercentInstallTrades
+    description: "Percentage of accounts that are installment (vs revolving)."
+    type: integer
+    range: "0-100"
+    direction: neutral
+    distribution: "Median: 33."
+    missing_pct: 5.6
+
+  - name: MSinceMostRecentInqexcl7days
+    description: "Months since most recent credit inquiry (excluding last 7 days)."
+    type: integer
+    range: "0-24"
+    direction: higher_better
+    distribution: "Median: 0. 27.9% missing (no inquiries on file)."
+    missing_pct: 27.9
+
+  - name: NumInqLast6M
+    description: "Number of credit inquiries in last 6 months."
+    type: integer
+    range: "0-66"
+    direction: lower_better
+    distribution: "Median: 1. P75: 2, P95: 5."
+    missing_pct: 5.6
+
+  - name: NumInqLast6Mexcl7days
+    description: "Same as NumInqLast6M excluding last 7 days. Similar distribution."
+    type: integer
+    range: "0-66"
+    direction: lower_better
+    distribution: "Similar to NumInqLast6M."
+    missing_pct: 5.6
+
+  - name: NetFractionRevolvingBurden
+    description: "Revolving balance as fraction of credit limit (utilization ratio). Values above 100 indicate over-limit."
+    type: integer
+    range: "0-232"
+    direction: lower_better
+    distribution: "Median: 29. P25: 9, P75: 56, P95: 89."
+    missing_pct: 7.4
+
+  - name: NetFractionInstallBurden
+    description: "Installment balance as fraction of original loan amounts."
+    type: integer
+    range: "0-471"
+    direction: lower_better
+    distribution: "Median: 74. P25: 53, P75: 87."
+    missing_pct: 38.3
+
+  - name: NumRevolvingTradesWBalance
+    description: "Number of revolving accounts carrying a balance."
+    type: integer
+    range: "0-32"
+    direction: lower_better
+    distribution: "Median: 3. P75: 5, P95: 10."
+    missing_pct: 7.1
+
+  - name: NumInstallTradesWBalance
+    description: "Number of installment accounts carrying a balance."
+    type: integer
+    range: "1-23"
+    direction: neutral
+    distribution: "Median: 2. P75: 3, P95: 5."
+    missing_pct: 13.9
+
+  - name: NumBank2NatlTradesWHighUtilization
+    description: "Bank/national trade accounts with high utilization ratio."
+    type: integer
+    range: "0-18"
+    direction: lower_better
+    distribution: "Median: 1. P75: 2, P95: 4."
+    missing_pct: 11.2
+
+  - name: PercentTradesWBalance
+    description: "Percentage of all accounts currently carrying a balance."
+    type: integer
+    range: "0-100"
+    direction: lower_better
+    distribution: "Median: 67. P25: 50, P75: 83."
+    missing_pct: 5.8
+
+summary_features:
+  - ExternalRiskEstimate
+  - NetFractionRevolvingBurden
+  - NumTrades60Ever2DerogPubRec
+  - PercentTradesNeverDelq
+  - NumInqLast6M
+  - MSinceMostRecentDelq
+  - MaxDelqEver
+  - NumSatisfactoryTrades
+
+regulatory_context: |
+  Fair Credit Reporting Act (FCRA):
+  - Lenders must provide specific adverse action reason codes when denying credit (15 USC 1681m).
+  - Reason codes must be specific and actionable (e.g., "Too many accounts with balances" not "poor credit").
+  - Standard FCRA adverse action reason codes include: "Amount owed on accounts is too high",
+    "Delinquent past or present on accounts", "Too few accounts currently paid as agreed",
+    "Length of time accounts have been established", "Too many recent inquiries",
+    "Proportion of balances to credit limits too high", "Too many accounts recently opened",
+    "Number of accounts with delinquency", "Serious delinquency or public record".
+
+  Equal Credit Opportunity Act (ECOA / Regulation B):
+  - Cannot discriminate based on race, color, religion, national origin, sex, marital status, age,
+    receipt of public assistance, or exercise of rights under Consumer Credit Protection Act.
+  - This dataset contains no demographic features, so ECOA compliance is inherent.
+
+  OCC Risk Management Guidance (OCC 2005-22, Comptroller's Handbook on HELOCs):
+  - Sound HELOC underwriting must assess: borrower's repayment capacity, credit history,
+    collateral adequacy, and overall indebtedness.
+  - High combined loan-to-value ratios and heavy revolving utilization are key risk factors.
+  - Thin credit files (few trades, short history) require extra scrutiny.
+  - Recent delinquencies weigh more heavily than older ones.
+
+data_observations: |
+  The following are empirical observations from this applicant population. They do not prescribe
+  a decision strategy — use your own judgment about how to weigh them.
+
+  - Delinquency history is common in this pool. Many applicants have nonzero counts of 60+ or 90+
+    day delinquencies on their record but are currently performing satisfactorily. Historical
+    delinquency with demonstrated recovery (currently satisfactory trades, time since last
+    delinquency) is a different risk profile than active or recent delinquency.
+
+  - Most applicants in this pool already carry revolving balances. The median revolving utilization
+    is 29% and the 75th percentile is 56%. High utilization on existing revolving lines is common
+    among both applicants who ultimately default and those who do not. Utilization alone, without
+    considering other dimensions (payment history, credit depth, recent behavior), may not
+    differentiate risk well.
+
+  - The population default rate is 52%. Both good and bad outcomes occur across the full range
+    of risk estimates and leverage levels.
+
+decision_framework: |
+  For each application, assess the following dimensions and use your own judgment to weigh them:
+
+  1. Credit history strength — risk estimate, delinquency history, satisfactory trades
+  2. Current leverage — revolving utilization, installment burden, high-utilization accounts
+  3. Recent behavior — inquiries, new accounts, recency of delinquency
+  4. Credit depth — age of file, number of trades
+
+  Consider how features interact with each other. A single concerning signal may not warrant
+  denial if other dimensions are strong. Multiple moderate concerns may compound into a denial.
+  Use your expertise to make a holistic judgment.
+
+product_context: |
+  This is a HELOC (revolving credit product secured by home equity). Consider what that means
+  for how you weigh current revolving leverage and repayment capacity.
+
+evaluation:
+  prohibited_features: []
+  require_reason_codes: true
+  max_crash_rate: 0.1
+  weights:
+    accuracy: 0.4
+    simplicity: 0.2
+    robustness: 0.2
+    coverage: 0.2
+  simplicity_thresholds:
+    ideal_max: 10
+    good_max: 20
+    acceptable_max: 40
+
+synthesizer:
+  function_name: underwrite
+  return_fields:
+    - decision
+    - reason_codes
+    - score
+
+defaults:
+  sample_size: 100
+  n_clusters: 20
+  holdout_size: 500
+  batch_size: 10
+  n_candidates: 5
+  n_generations: 10
+  top_k: 3

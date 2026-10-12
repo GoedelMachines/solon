@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "hard_constraint_pass": true,
+  "hard_constraint_failures": [],
+  "metrics": {
+    "accuracy": 1.0,
+    "correct": 100,
+    "total_compared": 100,
+    "simplicity": 0.3,
+    "n_conditions": 36,
+    "code_lines": 161,
+    "holdout_approval_precision": 0.702928870292887,
+    "holdout_denial_precision": 0.7049808429118773,
+    "holdout_outcome_quality": 0.7039548566023821,
+    "robustness": 0.851977428301191,
+    "coverage": 1.0,
+    "approve_count": 51,
+    "deny_count": 49,
+    "error_count": 0
+  },
+  "overall_score": 0.8303954856602382,
+  "misclassifications": []
+}

@@ -1,0 +1,6 @@
+fico_range_low,dti,emp_title,purpose,annual_inc,revol_util,loan_amnt,loan_status
+700,15.5,teacher,debt_consolidation,65000,45.2,12000,Fully Paid
+665,28.3,truck driver,credit_card,42000,78.1,25000,Charged Off
+720,10.2,software engineer,home_improvement,95000,22.0,8000,Fully Paid
+680,35.1,,small_business,38000,92.5,15000,Charged Off
+690,18.7,registered nurse,debt_consolidation,72000,55.3,20000,Fully Paid

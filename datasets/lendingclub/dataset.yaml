@@ -1,0 +1,620 @@
+name: lendingclub
+description: >
+  Lending Club peer-to-peer lending dataset. 2.26M personal loans issued 2007-2018,
+  ~1.35M with resolved outcomes (Fully Paid or Charged Off). 58 origination features
+  including FICO scores, credit bureau data, employment, and free-text job titles.
+  Default rate ~20%.
+
+target:
+  column: loan_status
+  positive_label: "Fully Paid"
+  negative_label: "Charged Off"
+  positive_meaning: "borrower repaid the loan in full"
+  negative_meaning: "borrower defaulted (charged off)"
+
+decisions:
+  approve: APPROVE
+  deny: DENY
+  approve_maps_to: positive
+  deny_maps_to: negative
+
+special_values:
+  values: []
+  meanings: {}
+  treatment: missing
+
+features:
+  - name: loan_amnt
+    description: "Requested loan amount in dollars."
+    type: numeric
+    range: "1000-35000"
+    direction: neutral
+    distribution: "Median: 12,425. P5: 3,500, P25: 8,000, P75: 20,000, P95: 32,151."
+    missing_pct: 0.0
+
+  - name: term
+    description: "Loan term. Values: '36 months' or '60 months'."
+    type: categorical
+    range: "36 months, 60 months"
+    direction: neutral
+    distribution: "76% are 36-month, 24% are 60-month."
+    missing_pct: 0.0
+
+  - name: emp_title
+    description: "Free-text job title entered by borrower. Extremely noisy (411k unique values, many typos). Contains occupational signal: professional roles (attorney 11.6%, software engineer 11.4% default) vs labor roles (truck driver 29.5%, machine operator 26.3%)."
+    type: string
+    range: "free text"
+    direction: neutral
+    distribution: "Top titles: teacher (48k), manager (46k), owner (34k), registered nurse (23k), driver (22k). 5.9% missing."
+    missing_pct: 5.9
+
+  - name: emp_length
+    description: "Employment length. Categories: '< 1 year', '1 year', '2 years', ..., '9 years', '10+ years'."
+    type: categorical
+    range: "< 1 year to 10+ years"
+    direction: higher_better
+    distribution: "33% are '10+ years'. 8.3% are '< 1 year'."
+    missing_pct: 5.9
+
+  - name: home_ownership
+    description: "Home ownership status of borrower."
+    type: categorical
+    range: "MORTGAGE, RENT, OWN"
+    direction: neutral
+    distribution: "MORTGAGE 49%, RENT 40%, OWN 11%."
+    missing_pct: 0.0
+
+  - name: annual_inc
+    description: "Self-reported annual income in dollars."
+    type: numeric
+    range: "0-9500000"
+    direction: higher_better
+    distribution: "Median: 65,000. P5: 28,000, P25: 45,000, P75: 90,500, P95: 156,000."
+    missing_pct: 0.0
+
+  - name: verification_status
+    description: "Whether income was verified by Lending Club."
+    type: categorical
+    range: "Not Verified, Source Verified, Verified"
+    direction: neutral
+    distribution: "Source Verified 43%, Verified 30%, Not Verified 27%."
+    missing_pct: 0.0
+
+  - name: purpose
+    description: "Loan purpose category selected by borrower."
+    type: categorical
+    range: "debt_consolidation, credit_card, home_improvement, other, major_purchase, medical, car, small_business, moving, vacation, house, wedding, renewable_energy, educational"
+    direction: neutral
+    distribution: "debt_consolidation 58%, credit_card 24%, home_improvement 6%, other 5%."
+    missing_pct: 0.0
+
+  - name: dti
+    description: "Debt-to-income ratio. Ratio of total monthly debt payments to monthly income."
+    type: numeric
+    range: "0-999"
+    direction: lower_better
+    distribution: "Median: 18. P5: 6, P25: 12, P75: 25, P95: 34."
+    missing_pct: 0.0
+
+  - name: fico_range_low
+    description: "Lower bound of FICO score range at loan origination. Lending Club has a 660 minimum."
+    type: numeric
+    range: "660-845"
+    direction: higher_better
+    distribution: "Median: 685. P5: 660, P25: 670, P75: 710, P95: 755."
+    missing_pct: 0.0
+
+  - name: fico_range_high
+    description: "Upper bound of FICO score range at loan origination."
+    type: numeric
+    range: "664-850"
+    direction: higher_better
+    distribution: "Median: 689. P5: 664, P25: 674, P75: 714, P95: 759."
+    missing_pct: 0.0
+
+  - name: open_acc
+    description: "Number of open credit accounts."
+    type: numeric
+    range: "1-82"
+    direction: neutral
+    distribution: "Median: 11. P5: 5, P25: 8, P75: 15, P95: 23."
+    missing_pct: 0.0
+
+  - name: total_acc
+    description: "Total number of credit accounts ever opened."
+    type: numeric
+    range: "4-169"
+    direction: neutral
+    distribution: "Median: 24. P5: 9, P25: 17, P75: 32, P95: 48."
+    missing_pct: 0.0
+
+  - name: num_sats
+    description: "Number of satisfactory accounts."
+    type: numeric
+    range: "0-82"
+    direction: higher_better
+    distribution: "Median: 11. P5: 5, P25: 8, P75: 15, P95: 22."
+    missing_pct: 0.0
+
+  - name: mo_sin_old_il_acct
+    description: "Months since oldest installment account opened."
+    type: numeric
+    range: "0-724"
+    direction: higher_better
+    distribution: "Median: 129 (10.8 years). P5: 32, P25: 99, P75: 153, P95: 215."
+    missing_pct: 3.0
+
+  - name: mo_sin_old_rev_tl_op
+    description: "Months since oldest revolving account opened."
+    type: numeric
+    range: "3-791"
+    direction: higher_better
+    distribution: "Median: 168 (14 years). P5: 53, P25: 118, P75: 235, P95: 368."
+    missing_pct: 0.0
+
+  - name: mort_acc
+    description: "Number of mortgage accounts."
+    type: numeric
+    range: "0-47"
+    direction: neutral
+    distribution: "Median: 1. P75: 3, P95: 5."
+    missing_pct: 0.0
+
+  - name: delinq_2yrs
+    description: "Number of 30+ day delinquencies in the past 2 years."
+    type: numeric
+    range: "0-39"
+    direction: lower_better
+    distribution: "Median: 0. P95: 2. Most borrowers have none."
+    missing_pct: 0.0
+
+  - name: mths_since_last_delinq
+    description: "Months since last delinquency. Missing means NO delinquency on record — this is a positive signal."
+    type: numeric
+    range: "0-171"
+    direction: higher_better
+    distribution: "Median: 31. P5: 5, P25: 15, P75: 51, P95: 74. 48% missing (no delinquency)."
+    missing_pct: 48.3
+
+  - name: mths_since_last_record
+    description: "Months since last public record (bankruptcy, judgment, lien). Missing means NO public record — this is a positive signal."
+    type: numeric
+    range: "0-120"
+    direction: higher_better
+    distribution: "Median: 67. P5: 23, P25: 50, P75: 82, P95: 113. 82% missing (no record)."
+    missing_pct: 81.7
+
+  - name: mths_since_last_major_derog
+    description: "Months since last major derogatory event (90+ day delinquency, chargeoff, etc). Missing means NO major derogatory — this is a positive signal."
+    type: numeric
+    range: "0-171"
+    direction: higher_better
+    distribution: "Median: 44. P5: 9, P25: 27, P75: 62, P95: 76. 70% missing (none)."
+    missing_pct: 70.3
+
+  - name: acc_now_delinq
+    description: "Number of accounts currently delinquent."
+    type: numeric
+    range: "0-6"
+    direction: lower_better
+    distribution: "Nearly all 0."
+    missing_pct: 0.0
+
+  - name: num_accts_ever_120_pd
+    description: "Number of accounts ever 120+ days past due."
+    type: numeric
+    range: "0-39"
+    direction: lower_better
+    distribution: "Median: 0. P95: 3."
+    missing_pct: 0.0
+
+  - name: num_tl_30dpd
+    description: "Number of accounts currently 30+ days past due."
+    type: numeric
+    range: "0-4"
+    direction: lower_better
+    distribution: "Nearly all 0."
+    missing_pct: 0.0
+
+  - name: num_tl_90g_dpd_24m
+    description: "Number of accounts 90+ days past due in last 24 months."
+    type: numeric
+    range: "0-39"
+    direction: lower_better
+    distribution: "Median: 0. P95: 1."
+    missing_pct: 0.0
+
+  - name: pct_tl_nvr_dlq
+    description: "Percent of accounts never delinquent."
+    type: numeric
+    range: "11-100"
+    direction: higher_better
+    distribution: "Median: 97. P5: 75, P25: 91, P75: 100, P95: 100."
+    missing_pct: 0.0
+
+  - name: mths_since_recent_bc_dlq
+    description: "Months since most recent bankcard delinquency. Missing means NO bankcard delinquency on record — this is a positive signal."
+    type: numeric
+    range: "0-189"
+    direction: higher_better
+    distribution: "Median: 38. P5: 6, P25: 21, P75: 61, P95: 77. 74% missing (none)."
+    missing_pct: 74.2
+
+  - name: mths_since_recent_revol_delinq
+    description: "Months since most recent revolving delinquency. Missing means NO revolving delinquency on record — this is a positive signal."
+    type: numeric
+    range: "0-171"
+    direction: higher_better
+    distribution: "Median: 33. P5: 5, P25: 17, P75: 54, P95: 76. 64% missing (none)."
+    missing_pct: 63.8
+
+  - name: inq_last_6mths
+    description: "Number of credit inquiries in last 6 months."
+    type: numeric
+    range: "0-5"
+    direction: lower_better
+    distribution: "Median: 0. P75: 1, P95: 2."
+    missing_pct: 0.0
+
+  - name: mths_since_recent_inq
+    description: "Months since most recent credit inquiry."
+    type: numeric
+    range: "0-25"
+    direction: higher_better
+    distribution: "Median: 5. P25: 2, P75: 10, P95: 19."
+    missing_pct: 10.4
+
+  - name: acc_open_past_24mths
+    description: "Number of accounts opened in last 24 months."
+    type: numeric
+    range: "0-64"
+    direction: lower_better
+    distribution: "Median: 4. P25: 2, P75: 6, P95: 11."
+    missing_pct: 0.0
+
+  - name: mo_sin_rcnt_tl
+    description: "Months since most recent account opened."
+    type: numeric
+    range: "0-263"
+    direction: neutral
+    distribution: "Median: 5. P25: 3, P75: 10, P95: 23."
+    missing_pct: 0.0
+
+  - name: mo_sin_rcnt_rev_tl_op
+    description: "Months since most recent revolving account opened."
+    type: numeric
+    range: "0-324"
+    direction: neutral
+    distribution: "Median: 8. P25: 4, P75: 16, P95: 44."
+    missing_pct: 0.0
+
+  - name: num_tl_op_past_12m
+    description: "Number of accounts opened in last 12 months."
+    type: numeric
+    range: "0-30"
+    direction: lower_better
+    distribution: "Median: 2. P25: 1, P75: 3, P95: 6."
+    missing_pct: 0.0
+
+  - name: mths_since_recent_bc
+    description: "Months since most recent bankcard account opened."
+    type: numeric
+    range: "0-610"
+    direction: neutral
+    distribution: "Median: 13. P25: 6, P75: 29, P95: 92."
+    missing_pct: 0.9
+
+  - name: revol_bal
+    description: "Total revolving credit balance in dollars."
+    type: numeric
+    range: "0-2904836"
+    direction: lower_better
+    distribution: "Median: 11,416. P5: 1,957, P25: 6,156, P75: 20,482, P95: 46,191."
+    missing_pct: 0.0
+
+  - name: revol_util
+    description: "Revolving line utilization rate (balance / credit limit as percentage). Values above 100 indicate over-limit."
+    type: numeric
+    range: "0-193"
+    direction: lower_better
+    distribution: "Median: 53%. P5: 13, P25: 35, P75: 71, P95: 92."
+    missing_pct: 0.0
+
+  - name: total_rev_hi_lim
+    description: "Total revolving high credit/credit limit."
+    type: numeric
+    range: "0-9999999"
+    direction: higher_better
+    distribution: "Median: 24,100. P5: 6,000, P25: 14,000, P75: 41,000, P95: 88,200."
+    missing_pct: 0.0
+
+  - name: num_rev_accts
+    description: "Number of revolving accounts."
+    type: numeric
+    range: "2-112"
+    direction: neutral
+    distribution: "Median: 13. P5: 5, P25: 9, P75: 19, P95: 31."
+    missing_pct: 0.0
+
+  - name: num_actv_rev_tl
+    description: "Number of currently active revolving accounts."
+    type: numeric
+    range: "0-52"
+    direction: neutral
+    distribution: "Median: 5. P25: 3, P75: 7, P95: 12."
+    missing_pct: 0.0
+
+  - name: num_rev_tl_bal_gt_0
+    description: "Number of revolving accounts with balance greater than zero."
+    type: numeric
+    range: "0-45"
+    direction: lower_better
+    distribution: "Median: 5. P25: 3, P75: 7, P95: 12."
+    missing_pct: 0.0
+
+  - name: num_op_rev_tl
+    description: "Number of open revolving accounts."
+    type: numeric
+    range: "0-67"
+    direction: neutral
+    distribution: "Median: 7. P25: 5, P75: 11, P95: 17."
+    missing_pct: 0.0
+
+  - name: bc_open_to_buy
+    description: "Total open-to-buy amount on revolving bankcards (credit limit minus balance)."
+    type: numeric
+    range: "0-332178"
+    direction: higher_better
+    distribution: "Median: 4,468. P5: 117, P25: 1,400, P75: 11,706, P95: 37,599."
+    missing_pct: 0.9
+
+  - name: bc_util
+    description: "Bankcard utilization rate (balance / credit limit as percentage). Values above 100 indicate over-limit."
+    type: numeric
+    range: "0-235"
+    direction: lower_better
+    distribution: "Median: 64%. P5: 11, P25: 40, P75: 86, P95: 98."
+    missing_pct: 1.0
+
+  - name: num_actv_bc_tl
+    description: "Number of currently active bankcard accounts."
+    type: numeric
+    range: "0-32"
+    direction: neutral
+    distribution: "Median: 3. P25: 2, P75: 5, P95: 8."
+    missing_pct: 0.0
+
+  - name: num_bc_sats
+    description: "Number of satisfactory bankcard accounts."
+    type: numeric
+    range: "0-57"
+    direction: higher_better
+    distribution: "Median: 4. P25: 3, P75: 6, P95: 10."
+    missing_pct: 0.0
+
+  - name: num_bc_tl
+    description: "Total number of bankcard accounts."
+    type: numeric
+    range: "0-61"
+    direction: neutral
+    distribution: "Median: 7. P25: 5, P75: 10, P95: 17."
+    missing_pct: 0.0
+
+  - name: percent_bc_gt_75
+    description: "Percent of bankcard accounts with utilization above 75%."
+    type: numeric
+    range: "0-100"
+    direction: lower_better
+    distribution: "Median: 50. P25: 12, P75: 75, P95: 100."
+    missing_pct: 1.0
+
+  - name: tot_cur_bal
+    description: "Total current balance of all accounts in dollars."
+    type: numeric
+    range: "0-4447397"
+    direction: neutral
+    distribution: "Median: 76,300. P5: 9,214, P25: 30,078, P75: 203,762, P95: 427,961."
+    missing_pct: 0.0
+
+  - name: avg_cur_bal
+    description: "Average current balance across all accounts."
+    type: numeric
+    range: "0-555925"
+    direction: neutral
+    distribution: "Median: 7,034. P5: 1,142, P25: 3,114, P75: 17,728, P95: 41,530."
+    missing_pct: 0.0
+
+  - name: total_bal_ex_mort
+    description: "Total balance on all accounts excluding mortgage."
+    type: numeric
+    range: "0-2921551"
+    direction: lower_better
+    distribution: "Median: 38,808. P5: 7,474, P25: 21,974, P75: 64,579, P95: 136,128."
+    missing_pct: 0.0
+
+  - name: tot_hi_cred_lim
+    description: "Total high credit/credit limit across all accounts."
+    type: numeric
+    range: "2500-9999999"
+    direction: higher_better
+    distribution: "Median: 107,647. P5: 19,500, P25: 49,856, P75: 245,718, P95: 494,274."
+    missing_pct: 0.0
+
+  - name: total_bc_limit
+    description: "Total bankcard credit limit."
+    type: numeric
+    range: "0-344200"
+    direction: higher_better
+    distribution: "Median: 14,900. P5: 2,300, P25: 7,600, P75: 28,000, P95: 63,982."
+    missing_pct: 0.0
+
+  - name: num_il_tl
+    description: "Number of installment accounts."
+    type: numeric
+    range: "0-132"
+    direction: neutral
+    distribution: "Median: 7. P25: 4, P75: 11, P95: 23."
+    missing_pct: 0.0
+
+  - name: total_il_high_credit_limit
+    description: "Total installment high credit/credit limit."
+    type: numeric
+    range: "0-2101913"
+    direction: neutral
+    distribution: "Median: 32,693. P5: 0, P25: 15,295, P75: 57,642, P95: 121,319."
+    missing_pct: 0.0
+
+  - name: pub_rec
+    description: "Number of derogatory public records (bankruptcies, judgments, liens)."
+    type: numeric
+    range: "0-86"
+    direction: lower_better
+    distribution: "Nearly all 0. P95: 1."
+    missing_pct: 0.0
+
+  - name: pub_rec_bankruptcies
+    description: "Number of public record bankruptcies."
+    type: numeric
+    range: "0-9"
+    direction: lower_better
+    distribution: "Nearly all 0. P95: 1."
+    missing_pct: 0.0
+
+  - name: tax_liens
+    description: "Number of tax liens on record."
+    type: numeric
+    range: "0-85"
+    direction: lower_better
+    distribution: "Nearly all 0."
+    missing_pct: 0.0
+
+  - name: collections_12_mths_ex_med
+    description: "Number of collections in last 12 months excluding medical."
+    type: numeric
+    range: "0-10"
+    direction: lower_better
+    distribution: "Nearly all 0."
+    missing_pct: 0.0
+
+  - name: tot_coll_amt
+    description: "Total collection amounts ever owed in dollars."
+    type: numeric
+    range: "0-380757"
+    direction: lower_better
+    distribution: "Median: 0. P95: 860."
+    missing_pct: 0.0
+
+  - name: chargeoff_within_12_mths
+    description: "Number of chargeoffs in last 12 months."
+    type: numeric
+    range: "0-10"
+    direction: lower_better
+    distribution: "Nearly all 0."
+    missing_pct: 0.0
+
+summary_features:
+  - fico_range_low
+  - dti
+  - annual_inc
+  - revol_util
+  - delinq_2yrs
+  - inq_last_6mths
+  - pct_tl_nvr_dlq
+  - emp_title
+
+regulatory_context: |
+  Fair Credit Reporting Act (FCRA):
+  - Lenders must provide specific adverse action reason codes when denying credit (15 USC 1681m).
+  - Reason codes must be specific and actionable.
+  - Standard FCRA adverse action reason codes include: "Amount owed on accounts is too high",
+    "Delinquent past or present on accounts", "Too few accounts currently paid as agreed",
+    "Length of time accounts have been established", "Too many recent inquiries",
+    "Proportion of balances to credit limits too high", "Too many accounts recently opened",
+    "Number of accounts with delinquency", "Serious delinquency or public record".
+
+  Equal Credit Opportunity Act (ECOA / Regulation B):
+  - Cannot discriminate based on race, color, religion, national origin, sex, marital status, age,
+    receipt of public assistance, or exercise of rights under Consumer Credit Protection Act.
+  - This dataset contains no demographic features, so ECOA compliance is inherent.
+
+  Truth in Lending Act (TILA):
+  - Requires clear disclosure of loan terms, APR, and total cost of credit.
+  - Relevant for unsecured consumer lending products.
+
+data_observations: |
+  The following are empirical observations from this borrower population. They do not prescribe
+  a decision strategy — use your own judgment about how to weigh them.
+
+  - The default rate is approximately 20%. This population skews toward borrowers who may not
+    qualify for traditional bank loans.
+
+  - FICO scores are narrow-range (660-850) because Lending Club has a 660 minimum floor.
+    Most borrowers cluster between 670-720. Small differences in FICO within this range
+    may still be meaningful.
+
+  - 58% of loans are for debt consolidation and 24% for credit card refinancing. The
+    population is relatively homogeneous in stated purpose.
+
+  - emp_title (job title) is extremely noisy free text with 411k unique values and many
+    typos, but shows real occupational signal: professional roles (attorney 11.6%, software
+    engineer 11.4% default rate) vs labor/service roles (truck driver 29.5%, machine operator
+    26.3%, server 26.6%).
+
+  - Several "months since" features have high missing rates (48-82%). For these features,
+    missing means "no event on record" — this is typically a POSITIVE signal. For example,
+    mths_since_last_delinq being missing means the borrower has never been delinquent.
+
+  - 60-month loans default at roughly double the rate of 36-month loans.
+
+decision_framework: |
+  For each application, assess the following dimensions and use your own judgment to weigh them:
+
+  1. Creditworthiness — FICO score, delinquency history, public records, percent never delinquent
+  2. Capacity — annual income, DTI ratio, existing debt burden relative to income
+  3. Leverage — revolving utilization, bankcard utilization, total balances relative to limits
+  4. Recent behavior — inquiries, new accounts opened, recency of delinquency
+  5. Stability — employment length, home ownership, credit history depth
+  6. Loan characteristics — amount relative to income, term choice (60-month is riskier)
+  7. Occupational signal — job title patterns if the program chooses to use emp_title
+
+  Consider how features interact. A high DTI with strong FICO and long employment history
+  is different from high DTI with thin credit and recent delinquency. A single concerning
+  signal may not warrant denial if other dimensions are strong. Multiple moderate concerns
+  may compound into a denial.
+
+product_context: |
+  This is an unsecured personal loan (no collateral) issued through a peer-to-peer lending
+  platform. Loan amounts range from $1,000 to $35,000 with 36 or 60 month terms. Unlike
+  HELOC products, there is no home equity securing the loan, so the lender bears full loss
+  on default. Consider what that means for how you weigh current debt burden and repayment
+  capacity.
+
+evaluation:
+  prohibited_features: []
+  require_reason_codes: true
+  max_crash_rate: 0.1
+  weights:
+    accuracy: 0.4
+    simplicity: 0.2
+    robustness: 0.2
+    coverage: 0.2
+  simplicity_thresholds:
+    ideal_max: 15
+    good_max: 30
+    acceptable_max: 50
+
+synthesizer:
+  function_name: underwrite
+  return_fields:
+    - decision
+    - reason_codes
+    - score
+
+defaults:
+  sample_size: 100
+  n_clusters: 20
+  holdout_size: 500
+  batch_size: 10
+  n_candidates: 5
+  n_generations: 10
+  top_k: 3
